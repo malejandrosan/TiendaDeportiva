@@ -1,0 +1,9 @@
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\TiendaDeportiva.exe.config
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\TiendaDeportiva.exe
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\TiendaDeportiva.pdb
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.csproj.AssemblyReference.cache
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.Properties.Resources.resources
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.csproj.GenerateResource.cache
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.csproj.CoreCompileInputs.cache
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.exe
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.pdb
