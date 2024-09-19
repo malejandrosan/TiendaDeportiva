@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F4BA7C0-F063-418D-85AA-C85975168367}|TiendaDeportiva\\TiendaDeportiva.csproj|c:\\users\\mario\\source\\repos\\tiendadeportiva\\tiendadeportiva\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7F4BA7C0-F063-418D-85AA-C85975168367}|TiendaDeportiva\\TiendaDeportiva.csproj|solutionrelative:tiendadeportiva\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7F4BA7C0-F063-418D-85AA-C85975168367}|TiendaDeportiva\\CapaPresentacion.csproj|c:\\users\\mario\\source\\repos\\tiendadeportiva\\tiendadeportiva\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7F4BA7C0-F063-418D-85AA-C85975168367}|TiendaDeportiva\\CapaPresentacion.csproj|solutionrelative:tiendadeportiva\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|c:\\users\\mario\\source\\repos\\tiendadeportiva\\capaentidades\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|solutionrelative:capaentidades\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|c:\\users\\mario\\source\\repos\\tiendadeportiva\\capaentidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|solutionrelative:capaentidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\capaentidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|solutionrelative:capaentidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|c:\\users\\mario\\source\\repos\\tiendadeportiva\\capaentidades\\articulosxsucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|solutionrelative:capaentidades\\articulosxsucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|c:\\users\\mario\\source\\repos\\tiendadeportiva\\capaentidades\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|solutionrelative:capaentidades\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|c:\\users\\mario\\source\\repos\\tiendadeportiva\\capaentidades\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18525E48-676D-4006-835E-D72E33E3C131}|CapaEntidades\\CapaEntidades.csproj|solutionrelative:capaentidades\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +49,86 @@
               "ToolTip": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\TiendaDeportiva\\Form1.cs [Design]",
               "RelativeToolTip": "TiendaDeportiva\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T04:02:20.064Z",
+              "WhenOpened": "2024-09-19T04:57:24.196Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ArticulosXSucursal.cs",
+              "DocumentMoniker": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\ArticulosXSucursal.cs",
+              "RelativeDocumentMoniker": "CapaEntidades\\ArticulosXSucursal.cs",
+              "ToolTip": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\ArticulosXSucursal.cs",
+              "RelativeToolTip": "CapaEntidades\\ArticulosXSucursal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T04:50:05.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\Cliente.cs",
+              "RelativeDocumentMoniker": "CapaEntidades\\Cliente.cs",
+              "ToolTip": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\Cliente.cs",
+              "RelativeToolTip": "CapaEntidades\\Cliente.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T04:42:37.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sucursal.cs",
+              "DocumentMoniker": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\Sucursal.cs",
+              "RelativeDocumentMoniker": "CapaEntidades\\Sucursal.cs",
+              "ToolTip": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\Sucursal.cs",
+              "RelativeToolTip": "CapaEntidades\\Sucursal.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA4wDYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T04:34:40.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Administrador.cs",
+              "DocumentMoniker": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\Administrador.cs",
+              "RelativeDocumentMoniker": "CapaEntidades\\Administrador.cs",
+              "ToolTip": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\Administrador.cs",
+              "RelativeToolTip": "CapaEntidades\\Administrador.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T04:24:04.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Articulo.cs",
+              "DocumentMoniker": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\Articulo.cs",
+              "RelativeDocumentMoniker": "CapaEntidades\\Articulo.cs",
+              "ToolTip": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\Articulo.cs",
+              "RelativeToolTip": "CapaEntidades\\Articulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T06:03:42.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\Categoria.cs",
+              "RelativeDocumentMoniker": "CapaEntidades\\Categoria.cs",
+              "ToolTip": "C:\\Users\\MARIO\\source\\repos\\TiendaDeportiva\\CapaEntidades\\Categoria.cs",
+              "RelativeToolTip": "CapaEntidades\\Categoria.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwDAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T05:22:43.833Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
