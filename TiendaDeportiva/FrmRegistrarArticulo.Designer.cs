@@ -1,6 +1,6 @@
 ﻿namespace TiendaDeportiva
 {
-    partial class RegistrarArticulo
+    partial class FrmRegistrarArticulo
     {
         /// <summary>
         /// Required designer variable.

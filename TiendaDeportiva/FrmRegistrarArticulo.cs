@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TiendaDeportiva
 {
-    public partial class RegistrarArticulo : Form
+    public partial class FrmRegistrarArticulo : Form
     {
-        public RegistrarArticulo()
+        public FrmRegistrarArticulo()
         {
             InitializeComponent();
         }
