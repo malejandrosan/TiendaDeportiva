@@ -9,3 +9,4 @@ C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDepo
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.pdb
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmRegistrarCategoria.resources
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmRegistrarArticulo.resources
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmRegistrarAdministrador.resources

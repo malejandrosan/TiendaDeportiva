@@ -52,6 +52,12 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRegistrarAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarAdministrador.Designer.cs">
+      <DependentUpon>FrmRegistrarAdministrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegistrarCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="FrmRegistrarArticulo.Designer.cs">
       <DependentUpon>FrmRegistrarArticulo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmRegistrarAdministrador.resx">
+      <DependentUpon>FrmRegistrarAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarCategoria.resx">
       <DependentUpon>FrmRegistrarCategoria.cs</DependentUpon>
     </EmbeddedResource>
