@@ -191,6 +191,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnAtras);
             this.Name = "FrmRegistrarSucursal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistrarSucursal";
             this.ResumeLayout(false);
             this.PerformLayout();

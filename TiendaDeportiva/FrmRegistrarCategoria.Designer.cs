@@ -129,6 +129,7 @@
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnAceptar);
             this.Name = "FrmRegistrarCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistrarCategoria";
             this.ResumeLayout(false);
             this.PerformLayout();

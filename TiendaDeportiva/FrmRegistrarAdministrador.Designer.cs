@@ -85,6 +85,7 @@
             this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // txtNombre
             // 
@@ -189,6 +190,7 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblTitulo);
             this.Name = "FrmRegistrarAdministrador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistrarAdministrador";
             this.ResumeLayout(false);
             this.PerformLayout();

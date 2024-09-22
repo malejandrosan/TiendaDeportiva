@@ -152,7 +152,7 @@
             this.cmbActivo.Size = new System.Drawing.Size(147, 21);
             this.cmbActivo.TabIndex = 12;
             // 
-            // RegistrarArticulo
+            // FrmRegistrarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -170,7 +170,8 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnAtras);
-            this.Name = "RegistrarArticulo";
+            this.Name = "FrmRegistrarArticulo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistrarArticulo";
             this.ResumeLayout(false);
             this.PerformLayout();

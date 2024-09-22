@@ -190,6 +190,7 @@
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblTitulo);
             this.Name = "FrmRegistrarCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistrarCliente";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -132,6 +132,7 @@
             this.Controls.Add(this.lblSucursal);
             this.Controls.Add(this.label1);
             this.Name = "FrmRegistrarArticuloXSucursal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistrarArticuloXSucursal";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
