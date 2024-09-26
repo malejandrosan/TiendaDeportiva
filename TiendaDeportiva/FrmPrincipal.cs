@@ -27,9 +27,9 @@ namespace TiendaDeportiva
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             // Oculta FrmPrincipal y muestra FrmRegistrarMenu
-            FrmRegistrarMenu frmRegistrarMenu = new FrmRegistrarMenu();
+            FrmRegistrarMenu frm = new FrmRegistrarMenu();
             this.Hide();
-            frmRegistrarMenu.ShowDialog();
+            frm.ShowDialog();
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)

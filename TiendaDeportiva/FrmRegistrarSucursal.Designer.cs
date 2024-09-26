@@ -53,6 +53,7 @@
             this.btnAtras.TabIndex = 0;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // btnAceptar
             // 

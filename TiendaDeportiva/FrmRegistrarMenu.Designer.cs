@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.btnNuevoAdministrador = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnNuevoArticulo = new System.Windows.Forms.Button();
+            this.btnNuevaCategoria = new System.Windows.Forms.Button();
+            this.btnNuevaSucursal = new System.Windows.Forms.Button();
+            this.btnNuevoCliente = new System.Windows.Forms.Button();
+            this.btnNuevoArticuloASucursal = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -47,50 +47,55 @@
             this.btnNuevoAdministrador.UseVisualStyleBackColor = true;
             this.btnNuevoAdministrador.Click += new System.EventHandler(this.btnNuevoAdministrador_Click);
             // 
-            // button2
+            // btnNuevoArticulo
             // 
-            this.button2.Location = new System.Drawing.Point(192, 162);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 46);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Nuevo Artículo";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnNuevoArticulo.Location = new System.Drawing.Point(192, 162);
+            this.btnNuevoArticulo.Name = "btnNuevoArticulo";
+            this.btnNuevoArticulo.Size = new System.Drawing.Size(168, 46);
+            this.btnNuevoArticulo.TabIndex = 1;
+            this.btnNuevoArticulo.Text = "Nuevo Artículo";
+            this.btnNuevoArticulo.UseVisualStyleBackColor = true;
+            this.btnNuevoArticulo.Click += new System.EventHandler(this.btnNuevoArticulo_Click);
             // 
-            // button3
+            // btnNuevaCategoria
             // 
-            this.button3.Location = new System.Drawing.Point(454, 65);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(168, 46);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Nueva Categoría";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnNuevaCategoria.Location = new System.Drawing.Point(454, 65);
+            this.btnNuevaCategoria.Name = "btnNuevaCategoria";
+            this.btnNuevaCategoria.Size = new System.Drawing.Size(168, 46);
+            this.btnNuevaCategoria.TabIndex = 2;
+            this.btnNuevaCategoria.Text = "Nueva Categoría";
+            this.btnNuevaCategoria.UseVisualStyleBackColor = true;
+            this.btnNuevaCategoria.Click += new System.EventHandler(this.btnNuevaCategoria_Click);
             // 
-            // button4
+            // btnNuevaSucursal
             // 
-            this.button4.Location = new System.Drawing.Point(454, 256);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(168, 46);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Nueva Sucursal";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnNuevaSucursal.Location = new System.Drawing.Point(454, 256);
+            this.btnNuevaSucursal.Name = "btnNuevaSucursal";
+            this.btnNuevaSucursal.Size = new System.Drawing.Size(168, 46);
+            this.btnNuevaSucursal.TabIndex = 3;
+            this.btnNuevaSucursal.Text = "Nueva Sucursal";
+            this.btnNuevaSucursal.UseVisualStyleBackColor = true;
+            this.btnNuevaSucursal.Click += new System.EventHandler(this.btnNuevaSucursal_Click);
             // 
-            // button5
+            // btnNuevoCliente
             // 
-            this.button5.Location = new System.Drawing.Point(454, 162);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(168, 46);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Nuevo Cliente";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnNuevoCliente.Location = new System.Drawing.Point(454, 162);
+            this.btnNuevoCliente.Name = "btnNuevoCliente";
+            this.btnNuevoCliente.Size = new System.Drawing.Size(168, 46);
+            this.btnNuevoCliente.TabIndex = 4;
+            this.btnNuevoCliente.Text = "Nuevo Cliente";
+            this.btnNuevoCliente.UseVisualStyleBackColor = true;
+            this.btnNuevoCliente.Click += new System.EventHandler(this.btnNuevoCliente_Click);
             // 
-            // button6
+            // btnNuevoArticuloASucursal
             // 
-            this.button6.Location = new System.Drawing.Point(192, 256);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(168, 46);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Nuevo Artículo a Sucursal";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnNuevoArticuloASucursal.Location = new System.Drawing.Point(192, 256);
+            this.btnNuevoArticuloASucursal.Name = "btnNuevoArticuloASucursal";
+            this.btnNuevoArticuloASucursal.Size = new System.Drawing.Size(168, 46);
+            this.btnNuevoArticuloASucursal.TabIndex = 5;
+            this.btnNuevoArticuloASucursal.Text = "Nuevo Artículo a Sucursal";
+            this.btnNuevoArticuloASucursal.UseVisualStyleBackColor = true;
+            this.btnNuevoArticuloASucursal.Click += new System.EventHandler(this.btnNuevoArticuloASucursal_Click);
             // 
             // btnAtras
             // 
@@ -108,11 +113,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAtras);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnNuevoArticuloASucursal);
+            this.Controls.Add(this.btnNuevoCliente);
+            this.Controls.Add(this.btnNuevaSucursal);
+            this.Controls.Add(this.btnNuevaCategoria);
+            this.Controls.Add(this.btnNuevoArticulo);
             this.Controls.Add(this.btnNuevoAdministrador);
             this.Name = "FrmRegistrarMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -124,11 +129,11 @@
         #endregion
 
         private System.Windows.Forms.Button btnNuevoAdministrador;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnNuevoArticulo;
+        private System.Windows.Forms.Button btnNuevaCategoria;
+        private System.Windows.Forms.Button btnNuevaSucursal;
+        private System.Windows.Forms.Button btnNuevoCliente;
+        private System.Windows.Forms.Button btnNuevoArticuloASucursal;
         private System.Windows.Forms.Button btnAtras;
     }
 }

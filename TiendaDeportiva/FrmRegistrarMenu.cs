@@ -35,5 +35,35 @@ namespace TiendaDeportiva
             frmPrincipal.Show();
             this.Close();
         }
+
+        private void btnNuevoArticulo_Click(object sender, EventArgs e)
+        {
+            FrmRegistrarArticulo frm = new FrmRegistrarArticulo();
+            frm.ShowDialog();
+        }
+
+        private void btnNuevaCategoria_Click(object sender, EventArgs e)
+        {
+            FrmRegistrarCategoria frm = new FrmRegistrarCategoria();
+            frm.ShowDialog();
+        }
+
+        private void btnNuevoCliente_Click(object sender, EventArgs e)
+        {
+            FrmRegistrarCliente frm = new FrmRegistrarCliente();
+            frm.ShowDialog();
+        }
+
+        private void btnNuevaSucursal_Click(object sender, EventArgs e)
+        {
+            FrmRegistrarSucursal frm = new FrmRegistrarSucursal();
+            frm.ShowDialog();
+        }
+
+        private void btnNuevoArticuloASucursal_Click(object sender, EventArgs e)
+        {
+            FrmRegistrarArticuloXSucursal frm = new FrmRegistrarArticuloXSucursal();
+            frm.ShowDialog();
+        }
     }
 }
