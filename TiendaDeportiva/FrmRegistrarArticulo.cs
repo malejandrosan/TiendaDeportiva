@@ -17,9 +17,23 @@ namespace TiendaDeportiva
             InitializeComponent();
         }
 
+        private void LimpiarPantalla()
+        {
+            txtId.Text = string.Empty;
+            txtDescripcion.Text = string.Empty;
+            txtMarca.Text = string.Empty;
+            cmbCategoria.SelectedIndex = 0;
+            cmbActivo.SelectedIndex = 0;
+        }
+
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            LimpiarPantalla();
         }
     }
 }

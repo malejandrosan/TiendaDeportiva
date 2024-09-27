@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* UNED III Cuatrimestre
+ * Proyecto I: Programa que permite la administración de una Tienda Deportiva
+ * Estudiante: Mario Sánchez Gamboa
+ * Fecha: 26/09/2024
+ */
+
 namespace TiendaDeportiva
 {
     public partial class FrmRegistrarCategoria : Form
@@ -17,9 +23,22 @@ namespace TiendaDeportiva
             InitializeComponent();
         }
 
+        private void LimpiarPantalla()
+        {
+            txtId.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtDescripcion.Text = string.Empty;
+        }
+
+
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            LimpiarPantalla();
         }
     }
 }
