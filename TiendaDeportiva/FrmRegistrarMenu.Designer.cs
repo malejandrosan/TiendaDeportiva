@@ -39,6 +39,7 @@
             // 
             // btnNuevoAdministrador
             // 
+            this.btnNuevoAdministrador.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoAdministrador.Location = new System.Drawing.Point(192, 65);
             this.btnNuevoAdministrador.Name = "btnNuevoAdministrador";
             this.btnNuevoAdministrador.Size = new System.Drawing.Size(168, 46);
@@ -49,6 +50,7 @@
             // 
             // btnNuevoArticulo
             // 
+            this.btnNuevoArticulo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoArticulo.Location = new System.Drawing.Point(192, 162);
             this.btnNuevoArticulo.Name = "btnNuevoArticulo";
             this.btnNuevoArticulo.Size = new System.Drawing.Size(168, 46);
@@ -59,6 +61,7 @@
             // 
             // btnNuevaCategoria
             // 
+            this.btnNuevaCategoria.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevaCategoria.Location = new System.Drawing.Point(454, 65);
             this.btnNuevaCategoria.Name = "btnNuevaCategoria";
             this.btnNuevaCategoria.Size = new System.Drawing.Size(168, 46);
@@ -69,6 +72,7 @@
             // 
             // btnNuevaSucursal
             // 
+            this.btnNuevaSucursal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevaSucursal.Location = new System.Drawing.Point(454, 256);
             this.btnNuevaSucursal.Name = "btnNuevaSucursal";
             this.btnNuevaSucursal.Size = new System.Drawing.Size(168, 46);
@@ -79,6 +83,7 @@
             // 
             // btnNuevoCliente
             // 
+            this.btnNuevoCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoCliente.Location = new System.Drawing.Point(454, 162);
             this.btnNuevoCliente.Name = "btnNuevoCliente";
             this.btnNuevoCliente.Size = new System.Drawing.Size(168, 46);
@@ -89,6 +94,7 @@
             // 
             // btnNuevoArticuloASucursal
             // 
+            this.btnNuevoArticuloASucursal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoArticuloASucursal.Location = new System.Drawing.Point(192, 256);
             this.btnNuevoArticuloASucursal.Name = "btnNuevoArticuloASucursal";
             this.btnNuevoArticuloASucursal.Size = new System.Drawing.Size(168, 46);
@@ -99,6 +105,7 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.Location = new System.Drawing.Point(311, 369);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(168, 46);
@@ -121,7 +128,7 @@
             this.Controls.Add(this.btnNuevoAdministrador);
             this.Name = "FrmRegistrarMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmRegistrarMenu";
+            this.Text = "Menú de Registro";
             this.ResumeLayout(false);
 
         }

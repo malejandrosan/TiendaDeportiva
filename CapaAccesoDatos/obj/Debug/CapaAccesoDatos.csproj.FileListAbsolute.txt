@@ -1,0 +1,9 @@
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.dll
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaAccesoDatos\bin\Debug\CapaEntidades.dll
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaAccesoDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csproj.AssemblyReference.cache
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaAccesoDatos\obj\Debug\CapaAcce.1AD5E18C.Up2Date
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb

@@ -30,7 +30,7 @@ namespace TiendaDeportiva
             txtDireccion.Text = string.Empty;
             txtTelefono.Text = string.Empty;
             cmbActivo.SelectedIndex = 0;
-            cmbAdministrador.SelectedIndex = 0;
+            cmbAdministrador.SelectedIndex = -1;
         }
 
         private void btnAtras_Click(object sender, EventArgs e)

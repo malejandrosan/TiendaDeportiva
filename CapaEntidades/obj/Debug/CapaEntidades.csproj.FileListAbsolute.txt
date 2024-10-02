@@ -1,0 +1,6 @@
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaEntidades\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\MARIO\source\repos\TiendaDeportiva\CapaEntidades\obj\Debug\CapaEntidades.pdb
