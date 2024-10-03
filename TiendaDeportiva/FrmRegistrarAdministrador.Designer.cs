@@ -58,9 +58,10 @@
             // 
             // txtId
             // 
+            this.txtId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(405, 82);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(200, 20);
+            this.txtId.Size = new System.Drawing.Size(200, 23);
             this.txtId.TabIndex = 1;
             // 
             // dtpFechaNacimiento
@@ -76,7 +77,7 @@
             // btnAtras
             // 
             this.btnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAtras.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.Location = new System.Drawing.Point(227, 387);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(115, 37);
@@ -88,7 +89,7 @@
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.Location = new System.Drawing.Point(490, 387);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(115, 36);
@@ -99,23 +100,26 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(405, 123);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(200, 20);
+            this.txtNombre.Size = new System.Drawing.Size(200, 23);
             this.txtNombre.TabIndex = 6;
             // 
             // txtApellido1
             // 
+            this.txtApellido1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido1.Location = new System.Drawing.Point(405, 170);
             this.txtApellido1.Name = "txtApellido1";
-            this.txtApellido1.Size = new System.Drawing.Size(200, 20);
+            this.txtApellido1.Size = new System.Drawing.Size(200, 23);
             this.txtApellido1.TabIndex = 7;
             // 
             // txtApellido2
             // 
+            this.txtApellido2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido2.Location = new System.Drawing.Point(405, 218);
             this.txtApellido2.Name = "txtApellido2";
-            this.txtApellido2.Size = new System.Drawing.Size(200, 20);
+            this.txtApellido2.Size = new System.Drawing.Size(200, 23);
             this.txtApellido2.TabIndex = 8;
             // 
             // dtpFechaIngreso
@@ -183,9 +187,9 @@
             this.lblId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblId.Location = new System.Drawing.Point(224, 84);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(21, 15);
+            this.lblId.Size = new System.Drawing.Size(100, 15);
             this.lblId.TabIndex = 15;
-            this.lblId.Text = "ID:";
+            this.lblId.Text = "ID Administrador:";
             // 
             // FrmRegistrarAdministrador
             // 

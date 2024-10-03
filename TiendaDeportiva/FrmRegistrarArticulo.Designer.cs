@@ -46,7 +46,7 @@
             // btnAtras
             // 
             this.btnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAtras.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.ForeColor = System.Drawing.Color.Black;
             this.btnAtras.Location = new System.Drawing.Point(227, 372);
             this.btnAtras.Name = "btnAtras";
@@ -59,8 +59,8 @@
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(425, 372);
+            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(478, 372);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(115, 38);
             this.btnAceptar.TabIndex = 1;
@@ -82,83 +82,93 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(234, 102);
+            this.lblId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.Location = new System.Drawing.Point(234, 110);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(73, 13);
+            this.lblId.Size = new System.Drawing.Size(66, 15);
             this.lblId.TabIndex = 3;
-            this.lblId.Text = "ID de Artículo";
+            this.lblId.Text = "ID Artículo:";
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(234, 146);
+            this.lblDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(234, 154);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
+            this.lblDescripcion.Size = new System.Drawing.Size(72, 15);
             this.lblDescripcion.TabIndex = 4;
-            this.lblDescripcion.Text = "Descripción";
+            this.lblDescripcion.Text = "Descripción:";
             // 
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(234, 191);
+            this.lblCategoria.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(234, 199);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(54, 13);
+            this.lblCategoria.Size = new System.Drawing.Size(61, 15);
             this.lblCategoria.TabIndex = 5;
-            this.lblCategoria.Text = "Categoría";
+            this.lblCategoria.Text = "Categoría:";
             // 
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(234, 241);
+            this.lblMarca.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.Location = new System.Drawing.Point(234, 249);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(37, 13);
+            this.lblMarca.Size = new System.Drawing.Size(43, 15);
             this.lblMarca.TabIndex = 6;
-            this.lblMarca.Text = "Marca";
+            this.lblMarca.Text = "Marca:";
             // 
             // lblActivo
             // 
             this.lblActivo.AutoSize = true;
-            this.lblActivo.Location = new System.Drawing.Point(234, 298);
+            this.lblActivo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActivo.Location = new System.Drawing.Point(233, 298);
             this.lblActivo.Name = "lblActivo";
-            this.lblActivo.Size = new System.Drawing.Size(37, 13);
+            this.lblActivo.Size = new System.Drawing.Size(44, 15);
             this.lblActivo.TabIndex = 7;
-            this.lblActivo.Text = "Activo";
+            this.lblActivo.Text = "Activo:";
             // 
             // txtId
             // 
+            this.txtId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(393, 102);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(147, 20);
+            this.txtId.Size = new System.Drawing.Size(200, 23);
             this.txtId.TabIndex = 8;
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(393, 146);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(147, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(200, 23);
             this.txtDescripcion.TabIndex = 9;
             // 
             // txtMarca
             // 
+            this.txtMarca.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMarca.Location = new System.Drawing.Point(393, 241);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(147, 20);
+            this.txtMarca.Size = new System.Drawing.Size(200, 23);
             this.txtMarca.TabIndex = 10;
             // 
             // cmbCategoria
             // 
+            this.cmbCategoria.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(393, 191);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(147, 21);
+            this.cmbCategoria.Size = new System.Drawing.Size(200, 23);
             this.cmbCategoria.TabIndex = 11;
             // 
             // cmbActivo
             // 
+            this.cmbActivo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbActivo.FormattingEnabled = true;
             this.cmbActivo.Location = new System.Drawing.Point(393, 290);
             this.cmbActivo.Name = "cmbActivo";
-            this.cmbActivo.Size = new System.Drawing.Size(147, 21);
+            this.cmbActivo.Size = new System.Drawing.Size(200, 23);
             this.cmbActivo.TabIndex = 12;
             // 
             // FrmRegistrarArticulo

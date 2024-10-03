@@ -42,7 +42,7 @@
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.Location = new System.Drawing.Point(465, 354);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(115, 38);
@@ -54,7 +54,7 @@
             // btnAtras
             // 
             this.btnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAtras.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.Location = new System.Drawing.Point(232, 354);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(115, 38);
@@ -66,58 +66,66 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lblTitulo.Location = new System.Drawing.Point(315, 40);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(99, 13);
+            this.lblTitulo.Size = new System.Drawing.Size(173, 25);
             this.lblTitulo.TabIndex = 2;
             this.lblTitulo.Text = "Registrar Categoría";
             // 
             // lblId
             // 
             this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblId.Location = new System.Drawing.Point(229, 137);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(68, 13);
+            this.lblId.Size = new System.Drawing.Size(75, 15);
             this.lblId.TabIndex = 3;
-            this.lblId.Text = "ID Categoría";
+            this.lblId.Text = "ID Categoría:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(229, 196);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(109, 13);
+            this.lblNombre.Size = new System.Drawing.Size(124, 15);
             this.lblNombre.TabIndex = 4;
-            this.lblNombre.Text = "Nombre de Categoría";
+            this.lblNombre.Text = "Nombre de Categoría:";
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcion.Location = new System.Drawing.Point(229, 264);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(128, 13);
+            this.lblDescripcion.Size = new System.Drawing.Size(142, 15);
             this.lblDescripcion.TabIndex = 5;
-            this.lblDescripcion.Text = "Descripción de Categoría";
+            this.lblDescripcion.Text = "Descripción de Categoría:";
             // 
             // txtId
             // 
+            this.txtId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(404, 134);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(176, 20);
+            this.txtId.Size = new System.Drawing.Size(200, 23);
             this.txtId.TabIndex = 6;
             // 
             // txtNombre
             // 
+            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(404, 196);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(176, 20);
+            this.txtNombre.Size = new System.Drawing.Size(200, 23);
             this.txtNombre.TabIndex = 7;
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(404, 261);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(176, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(200, 23);
             this.txtDescripcion.TabIndex = 8;
             // 
             // FrmRegistrarCategoria
