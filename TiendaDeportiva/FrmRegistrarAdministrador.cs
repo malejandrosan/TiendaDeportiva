@@ -79,7 +79,7 @@ namespace TiendaDeportiva
                     administrador.FechaIngreso = dtpFechaIngreso.Value;
 
                     AdministradorLN administradorLN = new AdministradorLN();
-                    bool esIngresoCorrecto = administradorLN.GuardarAdministrador(administrador);
+                    bool esIngresoCorrecto = administradorLN.Guardar(administrador);
 
                     if (esIngresoCorrecto)
                     {

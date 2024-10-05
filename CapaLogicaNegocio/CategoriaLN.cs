@@ -9,54 +9,53 @@ using CapaEntidades;
 /* UNED III Cuatrimestre
  * Proyecto I: Programa que permite la administración de una Tienda Deportiva
  * Estudiante: Mario Sánchez Gamboa
- * Fecha: 29/09/2024
+ * Fecha: 04/10/2024
  */
 
 namespace CapaLogicaNegocio
 {
-    public class ArticuloLN
+    public class CategoriaLN
     {
         #region Métodos
-        public bool Guardar(Articulo articulo)
+        public bool Guardar(Categoria categoria)
         {
             try
             {
-                bool yaExisteRegistro = false;
-                Articulo[] arregloArticulos = ArticuloAD.Consulta();
+                bool yaRegistroExiste = false;
+                Categoria[] arregloCategorias = CategoriaAD.Consulta();
 
-                if (arregloArticulos != null)
+                if (arregloCategorias != null)
                 {
-                    for (int i = 0; i < arregloArticulos.Length; i++) 
+                    for (int i = 0; i < arregloCategorias.Length; i++) 
                     { 
-                        if (arregloArticulos[i] != null && arregloArticulos[i].Id == articulo.Id)
+                        if (arregloCategorias[i] != null && arregloCategorias[i].Id == categoria.Id)
                         {
-                            yaExisteRegistro = true;
-                            break;
+                            yaRegistroExiste = true;
                         }
                     }
-                    if (yaExisteRegistro)
+                    if (yaRegistroExiste)
                     {
                         return false;
                     }
                     else
                     {
-                        return ArticuloAD.Guardar(articulo);
+                        return CategoriaAD.Guardar(categoria);
                     }
                 }
                 return false;
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 throw new Exception(ex.Message);
             }
+
         }
 
 
-        public Articulo[] Consulta()
+        public Categoria[] Consulta()
         {
-            return ArticuloAD.Consulta();
+            return CategoriaAD.Consulta();
         }
         #endregion
-
     }
 }

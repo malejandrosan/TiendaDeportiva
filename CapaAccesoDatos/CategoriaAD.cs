@@ -13,32 +13,34 @@ using CapaEntidades;
 
 namespace CapaAccesoDatos
 {
-    public static class ArticuloAD
+    public static class CategoriaAD
     {
         #region Atributos
-        public static Articulo[] arregloArticulos = new Articulo[20];
+        public static Categoria[] arregloCategorias = new Categoria[2];
         public static int indice = 0;
         #endregion
 
+
         #region Métodos
-        public static bool Guardar(Articulo articulo)
+        public static bool Guardar(Categoria categoria)
         {
             try
             {
-                arregloArticulos[indice] = articulo;
+                arregloCategorias[indice] = categoria;
                 indice++;
                 return true;
             }
-            catch (IndexOutOfRangeException)
+            catch (IndexOutOfRangeException) 
             {
                 throw new IndexOutOfRangeException("El repositorio se encuentra lleno");
             }
         }
 
-        public static Articulo[] Consulta()
+        public static Categoria[] Consulta()
         {
-            return arregloArticulos;
+            return arregloCategorias;
         }
         #endregion
+
     }
 }

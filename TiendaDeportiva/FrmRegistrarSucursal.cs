@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidades;
+using CapaLogicaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,9 +20,47 @@ namespace TiendaDeportiva
 {
     public partial class FrmRegistrarSucursal : Form
     {
+        #region Constructor
         public FrmRegistrarSucursal()
         {
             InitializeComponent();
+        }
+        #endregion
+
+        #region Métodos
+        private string ValidaDatos()
+        {
+            if (string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                txtId.Focus();
+                return "Debe ingresar el ID";
+            }
+            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            {
+                txtNombre.Focus();
+                return "Debe ingresar el nombre";
+            }
+            if (string.IsNullOrWhiteSpace(cmbAdministrador.Text))
+            {
+                cmbAdministrador.Focus();
+                return "Debe ingresar el administrador";
+            }
+            if (string.IsNullOrWhiteSpace (txtDireccion.Text))
+            {
+                txtDireccion.Focus();
+                return "Debe ingresar la dirección";
+            }
+            if (string.IsNullOrWhiteSpace(txtTelefono.Text))
+            {
+                txtTelefono.Focus();
+                return "Debe ingresar el número de teléfono";
+            }
+            if (string.IsNullOrWhiteSpace(cmbActivo.Text))
+            {
+                cmbActivo.Focus();
+                return "Debe ingresar si es activo o no";
+            }
+            return String.Empty;
         }
 
         private void LimpiarPantalla()
@@ -29,7 +69,7 @@ namespace TiendaDeportiva
             txtNombre.Text = string.Empty;
             txtDireccion.Text = string.Empty;
             txtTelefono.Text = string.Empty;
-            cmbActivo.SelectedIndex = 0;
+            cmbActivo.SelectedIndex = -1;
             cmbAdministrador.SelectedIndex = -1;
         }
 
@@ -40,7 +80,36 @@ namespace TiendaDeportiva
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            LimpiarPantalla();
+            try
+            {
+                string mensajeValidacion = ValidaDatos();
+                if (string.IsNullOrEmpty(mensajeValidacion))
+                {
+                    Sucursal sucursal = new Sucursal();
+
+                    SucursalLN sucursalLN = new SucursalLN();
+                    bool IngresoCorrecto = sucursalLN.Guardar(sucursal);
+
+                    if (IngresoCorrecto)
+                    {
+                        LimpiarPantalla();
+                        MessageBox.Show("El registro se ha ingresado correctamente");
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se ha ingresado correctamente");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(mensajeValidacion);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Un error ha ocurrido. Contacte al administrador del sistema");
+            }
         }
+        #endregion
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CapaEntidades;
+using CapaLogicaNegocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,36 +20,49 @@ namespace TiendaDeportiva
 {
     public partial class FrmRegistrarCliente : Form
     {
+        #region Constructor
         public FrmRegistrarCliente()
         {
             InitializeComponent();
         }
+        #endregion
 
-        private bool SonDatosValidos()
+        #region Métodos
+        private string ValidaDatos()
         {
-            try
+            if (string.IsNullOrWhiteSpace(txtId.Text))
             {
-                if (string.IsNullOrWhiteSpace(txtId.Text) ||
-                    string.IsNullOrWhiteSpace(txtNombre.Text) ||
-                    string.IsNullOrWhiteSpace(txtApellido1.Text) ||
-                    string.IsNullOrWhiteSpace(txtApellido2.Text) ||
-                    string.IsNullOrWhiteSpace(dtpFechaNacimiento.Value.ToShortDateString()) ||
-                    cmbActivo.SelectedIndex.Equals(-1))
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
+                txtId.Focus();
+                return "Debe ingresar el número identificación";
             }
-            catch(Exception e) {
-                return false;
+            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            {
+                txtNombre.Focus();
+                return "Debe ingresar el nombre";
             }
+            if (string.IsNullOrWhiteSpace(txtApellido1.Text))
+            {
+                txtApellido1.Focus();
+                return "Debe ingresar el primer apellido";
+            }
+            if (string.IsNullOrWhiteSpace(txtApellido2.Text))
+            {
+                txtApellido2.Focus();
+                return "Debe ingresar el segundo apellido";
+            }
+            if (string.IsNullOrWhiteSpace(dtpFechaNacimiento.ToString()))
+            {
+                dtpFechaNacimiento.Focus();
+                return "Debe ingresar la fecha de nacimiento";
+            }
+            if (string.IsNullOrWhiteSpace(cmbActivo.Text))
+            {
+                cmbActivo.Focus();
+                return "Debe ingresar si es activo o no";
+            }
+            return string.Empty;
         }
 
-
-        // https://stackoverflow.com/questions/9321844/how-do-i-clear-a-combobox
         private void LimpiarPantalla()
         {
             txtId.Text = string.Empty;
@@ -66,30 +80,43 @@ namespace TiendaDeportiva
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-
-            if (SonDatosValidos())
+            try
             {
-                Cliente cliente = new Cliente();
+                string valida = ValidaDatos();
 
-                cliente.Id = Convert.ToInt32(txtId.Text);
-                cliente.Nombre = txtNombre.Text;
-                cliente.Apellido1 = txtApellido1.Text;
-                cliente.Apellido2 = txtApellido2.Text;
-                cliente.FechaNacimiento = dtpFechaNacimiento.Value;
+                if (string.IsNullOrWhiteSpace(valida))
+                {
+                    Cliente cliente = new Cliente();
+                    cliente.Id = Convert.ToInt32(txtId.Text);
+                    cliente.Nombre = txtNombre.Text;
+                    cliente.Apellido1 = txtApellido1.Text;
+                    cliente.Apellido2 = txtApellido2.Text;
+                    cliente.FechaNacimiento = dtpFechaNacimiento.Value;
+                    cliente.Activo = cmbActivo.Equals("Si");
 
-                // Información sobre arrays tomada de: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays
-                Cliente[] clientes = new Cliente [5];
+                    ClienteLN clienteLN = new ClienteLN();
 
-
-
-
-
-                LimpiarPantalla();
+                    bool IngresoCorrecto = clienteLN.Guardar(cliente);
+                    if (IngresoCorrecto)
+                    {
+                        LimpiarPantalla();
+                        MessageBox.Show("Se ha ingresado el registro correctamente");
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se ha ingresado correctamente");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(valida);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Error: Por favor ingrese todos los espacios.");
+                MessageBox.Show("Un error ha ocurrido. Contacte al administrador del sistema");
             }
         }
+        #endregion
     }
 }

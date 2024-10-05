@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaEntidades;
 
 /* UNED III Cuatrimestre
  * Proyecto I: Programa que permite la administración de una Tienda Deportiva

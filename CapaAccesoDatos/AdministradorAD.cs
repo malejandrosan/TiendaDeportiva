@@ -22,7 +22,7 @@ namespace CapaAccesoDatos
 
 
         #region Métodos
-        public static bool GuardarAdministrador(Administrador administrador)
+        public static bool Guardar(Administrador administrador)
         {
             try
             {

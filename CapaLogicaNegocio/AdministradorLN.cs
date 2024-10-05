@@ -19,31 +19,31 @@ namespace CapaLogicaNegocio
     {
 
         #region Métodos
-        public bool GuardarAdministrador(Administrador administrador)
+        public bool Guardar(Administrador administrador)
         {
             try
             {
-                bool esIngresado = false;
+                bool yaExisteRegistro = false;
 
-                Administrador[] administradores = AdministradorAD.Consultar();
+                Administrador[] arregloAdministradores = AdministradorAD.Consultar();
 
-                if (administradores != null)
+                if (arregloAdministradores != null)
                 {
-                    for (int i = 0; i < administradores.Length; i++)
+                    for (int i = 0; i < arregloAdministradores.Length; i++)
                     {
-                        if (administradores[i].Id != null && administradores[i].Id == administrador.Id)
+                        if (arregloAdministradores[i] != null && arregloAdministradores[i].Id == administrador.Id)
                         {
-                            esIngresado = true;
+                            yaExisteRegistro = true;
                             break;
                         }
                     }
-                    if (esIngresado)
+                    if (yaExisteRegistro)
                     {
                         return false;
                     }
                     else
                     {
-                        return AdministradorAD.GuardarAdministrador(administrador);
+                        return AdministradorAD.Guardar(administrador);
                     }
                 }
                 return false;
