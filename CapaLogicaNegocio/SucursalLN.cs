@@ -22,7 +22,7 @@ namespace CapaLogicaNegocio
             try
             {
                 bool yaRegistroExiste = false;
-                Sucursal[] arregloSucursal = SucursalAD.Consulta();
+                Sucursal[] arregloSucursal = SucursalAD.Consultar();
 
                 if (arregloSucursal != null) 
                 {
@@ -44,6 +44,7 @@ namespace CapaLogicaNegocio
                     }
                 }
                 return false;
+
             }
             catch(Exception ex) 
             {
@@ -51,16 +52,10 @@ namespace CapaLogicaNegocio
             }
         }
 
-
-
-        public Sucursal[] Consulta()
+        public Sucursal[] Consultar()
         {
-            return SucursalAD.Consulta();
+            return SucursalAD.Consultar();
         }
         #endregion
-
-
-
-
     }
 }

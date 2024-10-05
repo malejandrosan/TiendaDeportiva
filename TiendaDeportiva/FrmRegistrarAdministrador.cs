@@ -66,9 +66,9 @@ namespace TiendaDeportiva
         {
             try
             {
-                string valida = ValidaDatos();
+                string mensajeValidacion = ValidaDatos();
 
-                if (string.IsNullOrEmpty(valida))
+                if (string.IsNullOrEmpty(mensajeValidacion))
                 {
                     Administrador administrador = new Administrador();
                     administrador.Id = Convert.ToInt32(txtId.Text);
@@ -93,7 +93,7 @@ namespace TiendaDeportiva
                 }
                 else
                 {
-                    MessageBox.Show(valida);
+                    MessageBox.Show(mensajeValidacion);
                 }
             }
             catch (Exception ex)

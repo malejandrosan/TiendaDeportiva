@@ -31,7 +31,7 @@ namespace TiendaDeportiva
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            FrmPrincipal frmPrincipal = new FrmPrincipal();
+            FrmMenuPrincipal frmPrincipal = new FrmMenuPrincipal();
             frmPrincipal.Show();
             this.Close();
         }

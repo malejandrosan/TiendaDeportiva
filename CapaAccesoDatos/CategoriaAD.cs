@@ -16,7 +16,7 @@ namespace CapaAccesoDatos
     public static class CategoriaAD
     {
         #region Atributos
-        public static Categoria[] arregloCategorias = new Categoria[2];
+        public static Categoria[] arregloCategorias = new Categoria[10];
         public static int indice = 0;
         #endregion
 
@@ -36,7 +36,7 @@ namespace CapaAccesoDatos
             }
         }
 
-        public static Categoria[] Consulta()
+        public static Categoria[] Consultar()
         {
             return arregloCategorias;
         }

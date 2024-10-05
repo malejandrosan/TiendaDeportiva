@@ -35,7 +35,7 @@ namespace CapaAccesoDatos
             }
         }
 
-        public static Sucursal[] Consulta()
+        public static Sucursal[] Consultar()
         {
             return arregloSucursales;
         }

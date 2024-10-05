@@ -22,7 +22,7 @@ namespace CapaLogicaNegocio
             try
             {
                 bool yaExisteRegistro = false;
-                Articulo[] arregloArticulos = ArticuloAD.Consulta();
+                Articulo[] arregloArticulos = ArticuloAD.Consultar();
 
                 if (arregloArticulos != null)
                 {
@@ -52,9 +52,9 @@ namespace CapaLogicaNegocio
         }
 
 
-        public Articulo[] Consulta()
+        public Articulo[] Consultar()
         {
-            return ArticuloAD.Consulta();
+            return ArticuloAD.Consultar();
         }
         #endregion
 

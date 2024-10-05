@@ -74,9 +74,9 @@ namespace TiendaDeportiva
         {
             try
             {
-                string valida = ValidaDatos();
+                string mensajeValidacion = ValidaDatos();
 
-                if (string.IsNullOrEmpty(valida))
+                if (string.IsNullOrEmpty(mensajeValidacion))
                 {
 
                     Articulo articulo = new Articulo();
@@ -101,7 +101,7 @@ namespace TiendaDeportiva
                 }
                 else 
                 {
-                    MessageBox.Show(valida);
+                    MessageBox.Show(mensajeValidacion);
                 }
             }
             catch(Exception ex) 

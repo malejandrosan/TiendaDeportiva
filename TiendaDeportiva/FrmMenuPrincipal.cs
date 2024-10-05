@@ -16,9 +16,9 @@ using System.Windows.Forms;
 
 namespace TiendaDeportiva
 {
-    public partial class FrmPrincipal : Form
+    public partial class FrmMenuPrincipal : Form
     {
-        public FrmPrincipal()
+        public FrmMenuPrincipal()
         {
             InitializeComponent();
         }

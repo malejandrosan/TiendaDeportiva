@@ -12,7 +12,6 @@ C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDepo
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmRegistrarAdministrador.resources
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmRegistrarSucursal.resources
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmRegistrarCliente.resources
-C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmPrincipal.resources
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmRegistrarArticuloXSucursal.resources
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmRegistrarMenu.resources
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\CapaEntidades.dll
@@ -22,3 +21,4 @@ C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\CapaLogica
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\CapaAccesoDatos.dll
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\CapaLogicaNegocio.pdb
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\CapaAccesoDatos.pdb
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmMenuPrincipal.resources

@@ -1,6 +1,6 @@
 ﻿namespace TiendaDeportiva
 {
-    partial class FrmPrincipal
+    partial class FrmMenuPrincipal
     {
         /// <summary>
         /// Required designer variable.

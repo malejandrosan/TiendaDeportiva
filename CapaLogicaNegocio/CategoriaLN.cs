@@ -22,7 +22,7 @@ namespace CapaLogicaNegocio
             try
             {
                 bool yaRegistroExiste = false;
-                Categoria[] arregloCategorias = CategoriaAD.Consulta();
+                Categoria[] arregloCategorias = CategoriaAD.Consultar();
 
                 if (arregloCategorias != null)
                 {
@@ -52,9 +52,9 @@ namespace CapaLogicaNegocio
         }
 
 
-        public Categoria[] Consulta()
+        public Categoria[] Consultar()
         {
-            return CategoriaAD.Consulta();
+            return CategoriaAD.Consultar();
         }
         #endregion
     }

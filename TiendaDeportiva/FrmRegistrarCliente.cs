@@ -82,9 +82,9 @@ namespace TiendaDeportiva
         {
             try
             {
-                string valida = ValidaDatos();
+                string mensajeValidacion = ValidaDatos();
 
-                if (string.IsNullOrWhiteSpace(valida))
+                if (string.IsNullOrWhiteSpace(mensajeValidacion))
                 {
                     Cliente cliente = new Cliente();
                     cliente.Id = Convert.ToInt32(txtId.Text);
@@ -109,7 +109,7 @@ namespace TiendaDeportiva
                 }
                 else
                 {
-                    MessageBox.Show(valida);
+                    MessageBox.Show(mensajeValidacion);
                 }
             }
             catch (Exception ex)

@@ -35,7 +35,7 @@ namespace CapaAccesoDatos
             }
         }
 
-        public static Articulo[] Consulta()
+        public static Articulo[] Consultar()
         {
             return arregloArticulos;
         }
