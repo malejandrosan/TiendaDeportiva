@@ -110,14 +110,8 @@ namespace TiendaDeportiva
 
                 if (string.IsNullOrWhiteSpace(mensajeValidacion))
                 {
-                    Cliente cliente = new Cliente();
-                    cliente.Id = Convert.ToInt32(txtId.Text);
-                    cliente.Nombre = txtNombre.Text;
-                    cliente.Apellido1 = txtApellido1.Text;
-                    cliente.Apellido2 = txtApellido2.Text;
-                    cliente.FechaNacimiento = dtpFechaNacimiento.Value;
-                    cliente.Activo = cmbActivo.Equals("Si");
 
+                    Cliente cliente = new Cliente(Convert.ToInt32(txtId.Text), txtNombre.Text, txtApellido1.Text, txtApellido2.Text, dtpFechaNacimiento.Value, cmbActivo.Text.Equals("Si"));
                     ClienteLN clienteLN = new ClienteLN();
 
                     bool IngresoCorrecto = clienteLN.Guardar(cliente);

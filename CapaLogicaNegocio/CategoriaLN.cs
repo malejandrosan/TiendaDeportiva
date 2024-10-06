@@ -60,6 +60,33 @@ namespace CapaLogicaNegocio
         {
             return CategoriaAD.Consultar();
         }
+
+        public Categoria Consultar(string nombre)
+        {
+            try
+            {
+                Categoria[] arregloCategorias = CategoriaAD.Consultar();
+                
+                if (arregloCategorias != null)
+                {
+                    for (int i = 0; i < arregloCategorias.Length; i++)
+                    {
+                        if (arregloCategorias[i] != null && arregloCategorias[i].Nombre.Equals(nombre))
+                        {
+                            return arregloCategorias[i];
+                        }
+                    }
+                }
+                return null;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+
         #endregion
     }
 }

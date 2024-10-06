@@ -71,7 +71,6 @@ namespace TiendaDeportiva
         {
             this.Close();
         }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             try
@@ -104,6 +103,34 @@ namespace TiendaDeportiva
             {
                 MessageBox.Show("Un error ha ocurrido. Contacte al administrador del sistema");
             }
+        }
+        private void FrmRegistrarArticuloXSucursal_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                // Carga articulos al datagridview
+                dgvArticulos.Rows.Clear();
+                ArticuloLN articuloLN = new ArticuloLN();
+                Articulo[] arregloArticulos = articuloLN.Consultar();
+                dgvArticulos.DataSource = arregloArticulos;
+
+                // Carga sucursales al combobox
+                SucursalLN sucursalLN = new SucursalLN();
+                Sucursal[] arregloSucursales = sucursalLN.Consultar();
+
+                foreach (Sucursal sucursal in arregloSucursales)
+                {
+                    if (sucursal != null)
+                    {
+                        cmbSucursal.Items.Add(sucursal.Nombre);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
         }
         #endregion
     }

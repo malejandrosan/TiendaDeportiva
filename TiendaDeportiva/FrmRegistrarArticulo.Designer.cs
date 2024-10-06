@@ -156,8 +156,12 @@
             // 
             // cmbActivo
             // 
+            this.cmbActivo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbActivo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbActivo.FormattingEnabled = true;
+            this.cmbActivo.Items.AddRange(new object[] {
+            "Si",
+            "No"});
             this.cmbActivo.Location = new System.Drawing.Point(393, 290);
             this.cmbActivo.Name = "cmbActivo";
             this.cmbActivo.Size = new System.Drawing.Size(200, 23);
@@ -165,6 +169,7 @@
             // 
             // cmbCategoria
             // 
+            this.cmbCategoria.AllowDrop = true;
             this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoria.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategoria.FormattingEnabled = true;
@@ -205,6 +210,7 @@
             this.Name = "FrmRegistrarArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Artículo";
+            this.Load += new System.EventHandler(this.FrmRegistrarArticulo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

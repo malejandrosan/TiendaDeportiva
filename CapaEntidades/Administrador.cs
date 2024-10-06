@@ -58,7 +58,7 @@ namespace CapaEntidades
         // Métodos
         public override string ToString()
         {
-            return $"{nombre} {apellido1} {apellido2}";
+            return nombre ;
         }
 
     }

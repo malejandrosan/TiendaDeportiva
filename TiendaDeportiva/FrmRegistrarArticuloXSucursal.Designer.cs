@@ -36,9 +36,9 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.cmbSucursal = new System.Windows.Forms.ComboBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.dgvConsulta = new System.Windows.Forms.DataGridView();
+            this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.lblMensaje = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +56,7 @@
             // 
             this.lblSucursal.AutoSize = true;
             this.lblSucursal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSucursal.Location = new System.Drawing.Point(263, 93);
+            this.lblSucursal.Location = new System.Drawing.Point(162, 105);
             this.lblSucursal.Name = "lblSucursal";
             this.lblSucursal.Size = new System.Drawing.Size(54, 15);
             this.lblSucursal.TabIndex = 1;
@@ -66,17 +66,17 @@
             // 
             this.lblArticulo.AutoSize = true;
             this.lblArticulo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArticulo.Location = new System.Drawing.Point(265, 174);
+            this.lblArticulo.Location = new System.Drawing.Point(162, 191);
             this.lblArticulo.Name = "lblArticulo";
-            this.lblArticulo.Size = new System.Drawing.Size(52, 15);
+            this.lblArticulo.Size = new System.Drawing.Size(116, 15);
             this.lblArticulo.TabIndex = 2;
-            this.lblArticulo.Text = "Artículo:";
+            this.lblArticulo.Text = "Seleccione Artículos:";
             // 
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(263, 135);
+            this.lblCantidad.Location = new System.Drawing.Point(162, 146);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(58, 15);
             this.lblCantidad.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             this.btnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnAtras.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.Location = new System.Drawing.Point(266, 400);
+            this.btnAtras.Location = new System.Drawing.Point(252, 422);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(115, 38);
             this.btnAtras.TabIndex = 4;
@@ -98,7 +98,7 @@
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(455, 400);
+            this.btnAceptar.Location = new System.Drawing.Point(448, 422);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(115, 38);
             this.btnAceptar.TabIndex = 5;
@@ -111,7 +111,7 @@
             this.cmbSucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSucursal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSucursal.FormattingEnabled = true;
-            this.cmbSucursal.Location = new System.Drawing.Point(363, 87);
+            this.cmbSucursal.Location = new System.Drawing.Point(331, 97);
             this.cmbSucursal.Name = "cmbSucursal";
             this.cmbSucursal.Size = new System.Drawing.Size(200, 23);
             this.cmbSucursal.TabIndex = 6;
@@ -119,23 +119,23 @@
             // txtCantidad
             // 
             this.txtCantidad.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad.Location = new System.Drawing.Point(363, 130);
+            this.txtCantidad.Location = new System.Drawing.Point(331, 143);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(200, 23);
             this.txtCantidad.TabIndex = 7;
             // 
-            // dgvConsulta
+            // dgvArticulos
             // 
-            this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsulta.Location = new System.Drawing.Point(266, 210);
-            this.dgvConsulta.Name = "dgvConsulta";
-            this.dgvConsulta.Size = new System.Drawing.Size(304, 150);
-            this.dgvConsulta.TabIndex = 8;
+            this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArticulos.Location = new System.Drawing.Point(156, 227);
+            this.dgvArticulos.Name = "dgvArticulos";
+            this.dgvArticulos.Size = new System.Drawing.Size(561, 150);
+            this.dgvArticulos.TabIndex = 8;
             // 
             // lblMensaje
             // 
             this.lblMensaje.AutoSize = true;
-            this.lblMensaje.Location = new System.Drawing.Point(351, 374);
+            this.lblMensaje.Location = new System.Drawing.Point(351, 391);
             this.lblMensaje.Name = "lblMensaje";
             this.lblMensaje.Size = new System.Drawing.Size(107, 13);
             this.lblMensaje.TabIndex = 18;
@@ -146,9 +146,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(803, 472);
             this.Controls.Add(this.lblMensaje);
-            this.Controls.Add(this.dgvConsulta);
+            this.Controls.Add(this.dgvArticulos);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.cmbSucursal);
             this.Controls.Add(this.btnAceptar);
@@ -160,7 +160,8 @@
             this.Name = "FrmRegistrarArticuloXSucursal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Artículo Por Sucursal";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
+            this.Load += new System.EventHandler(this.FrmRegistrarArticuloXSucursal_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,7 +177,7 @@
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.ComboBox cmbSucursal;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.DataGridView dgvConsulta;
+        private System.Windows.Forms.DataGridView dgvArticulos;
         private System.Windows.Forms.Label lblMensaje;
     }
 }

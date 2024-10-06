@@ -19,9 +19,9 @@ namespace CapaEntidades
     public class Categoria
     {
         // Atributos
-        public int id;
-        public string nombre;
-        public string descripcion;
+        private int id;
+        private string nombre;
+        private string descripcion;
 
         // Métodos Get y Set
         public int Id { get => id; set => id = value; }
@@ -44,10 +44,6 @@ namespace CapaEntidades
             this.descripcion = descripcion;
         }
 
-
-        /* Métodos 
-         * Información tomada de https://www.webdevtutor.net/blog/c-tostring-override
-         */
         public override string ToString()
         {
             return nombre;

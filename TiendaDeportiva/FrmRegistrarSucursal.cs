@@ -67,7 +67,6 @@ namespace TiendaDeportiva
             }
             return String.Empty;
         }
-
         private void LimpiarPantalla()
         {
             txtId.Text = string.Empty;
@@ -101,7 +100,6 @@ namespace TiendaDeportiva
         {
             this.Close();
         }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             try
@@ -112,7 +110,7 @@ namespace TiendaDeportiva
                     
                     AdministradorLN administradorLN = new AdministradorLN();
                     Administrador administrador = administradorLN.Consultar(cmbAdministrador.Text);
-                    Sucursal sucursal = new Sucursal(Convert.ToInt32(txtId.Text), txtNombre.Text, administrador, txtDireccion.Text, txtTelefono.Text, cmbActivo.Equals("Si"));
+                    Sucursal sucursal = new Sucursal(Convert.ToInt32(txtId.Text), txtNombre.Text, administrador, txtDireccion.Text, txtTelefono.Text, cmbActivo.Text.Equals("Si"));
 
                     SucursalLN sucursalLN = new SucursalLN();
                     bool IngresoCorrecto = sucursalLN.Guardar(sucursal);
@@ -135,6 +133,29 @@ namespace TiendaDeportiva
             catch (Exception ex)
             {
                 MessageBox.Show("Un error ha ocurrido. Contacte al administrador del sistema");
+            }
+        }
+        private void FrmRegistrarSucursal_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                AdministradorLN administradorLN = new AdministradorLN();
+                Administrador[] arregloAdministradores = administradorLN.Consultar();
+
+                if (arregloAdministradores != null)
+                {
+                    foreach (Administrador administrador in arregloAdministradores)
+                    {
+                        if (administrador != null)
+                        {
+                            cmbAdministrador.Items.Add(administrador);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
         #endregion

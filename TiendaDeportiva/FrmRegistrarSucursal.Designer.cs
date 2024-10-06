@@ -230,6 +230,7 @@
             this.Name = "FrmRegistrarSucursal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Sucursal";
+            this.Load += new System.EventHandler(this.FrmRegistrarSucursal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

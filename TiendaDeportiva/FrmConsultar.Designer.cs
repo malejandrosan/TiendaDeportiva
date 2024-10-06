@@ -57,6 +57,7 @@
             // 
             // cmbOpciones
             // 
+            this.cmbOpciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOpciones.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbOpciones.FormattingEnabled = true;
             this.cmbOpciones.Items.AddRange(new object[] {

@@ -24,7 +24,7 @@ namespace TiendaDeportiva
         {
             try
             {
-                if (string.IsNullOrEmpty(txtId.Text))
+                if (string.IsNullOrWhiteSpace(txtId.Text))
                 {
                     txtId.Focus();
                     return "Debe ingresar un número id";
@@ -34,22 +34,22 @@ namespace TiendaDeportiva
                     txtId.Focus();
                     return "Debe ingresar un id válido";
                 }
-                if (string.IsNullOrEmpty(txtDescripcion.Text))
+                if (string.IsNullOrWhiteSpace(txtDescripcion.Text))
                 {
                     txtDescripcion.Focus();
                     return "Debe ingresar una descripción";
                 }
-                if (string.IsNullOrEmpty(txtMarca.Text))
+                if (string.IsNullOrWhiteSpace(txtMarca.Text))
                 {
                     txtMarca.Focus();
                     return "Debe ingresar una marca";
                 }
-                if (string.IsNullOrEmpty(cmbCategoria.Text))
+                if (string.IsNullOrWhiteSpace(cmbCategoria.Text))
                 {
                     cmbCategoria.Focus();
                     return "Debe seleccionar una categoría";
                 }
-                if (string.IsNullOrEmpty(cmbActivo.Text))
+                if (string.IsNullOrWhiteSpace(cmbActivo.Text))
                 {
                     cmbActivo.Focus();
                     return "Debe seleccionar si se encuentra activo o no";
@@ -105,15 +105,13 @@ namespace TiendaDeportiva
 
                 if (string.IsNullOrEmpty(mensajeValidacion))
                 {
+                    CategoriaLN categoriaLN = new CategoriaLN();
+                    Categoria categoria = categoriaLN.Consultar(cmbCategoria.Text);
 
-                    Articulo articulo = new Articulo();
-
+                    Articulo articulo = new Articulo(Convert.ToInt32(txtId.Text), txtDescripcion.Text, categoria, txtMarca.Text, cmbActivo.Text.Equals("Si"));
 
                     ArticuloLN articuloLN = new ArticuloLN();
                     bool esIngresoCorrecto = articuloLN.Guardar(articulo);
-
-                    //CategoriaLN categoriaLN = new CategoriaLN();
-                    //Categoria categoria = categoriaLN.Consulta();
 
 
                     if (esIngresoCorrecto)
@@ -138,15 +136,27 @@ namespace TiendaDeportiva
         }
         #endregion
 
+        // Información tomada de
+        // https://stackoverflow.com/questions/18543299/how-can-i-add-array-values-into-a-combobox#:~:text=You%20can%20add%20an%20array%20of%20strings%20using%20method%20AddRange(array[])
         private void FrmRegistrarArticulo_Load(object sender, EventArgs e)
         {
-            CategoriaLN categoriaLN = new CategoriaLN();
-            Categoria[] arregloCategorias = categoriaLN.Consultar();
+            try
+            {
+                CategoriaLN categoriaLN = new CategoriaLN();
+                Categoria[] arregloCategorias = categoriaLN.Consultar();
 
-            cmbCategoria.DataSource = arregloCategorias;
-            cmbCategoria.DisplayMember = "nombre";
-            cmbCategoria.ValueMember = "nombre";
-
+                foreach (Categoria categoria in arregloCategorias)
+                {
+                    if (categoria != null)
+                    {
+                        cmbCategoria.Items.Add(categoria.Nombre);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
