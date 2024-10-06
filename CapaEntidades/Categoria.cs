@@ -8,6 +8,10 @@ using System.Threading.Tasks;
  * Proyecto I: Programa que permita la administración de una Tienda Deportiva
  * Estudiante: Mario Sánchez Gamboa
  * Fecha: 17/09/2024
+ *
+ * Esta clase está inspirada en el modelo de capas explicado en el video
+ * Sesión Virtual 01 Tutor: Marlon Dixon Gómez" de Marlon Dixon Gómez.
+ * Enlace: https://www.youtube.com/watch?v=U2dpCmOPsqs
  */
 
 namespace CapaEntidades
@@ -15,9 +19,9 @@ namespace CapaEntidades
     public class Categoria
     {
         // Atributos
-        private int id;
-        private string nombre;
-        private string descripcion;
+        public int id;
+        public string nombre;
+        public string descripcion;
 
         // Métodos Get y Set
         public int Id { get => id; set => id = value; }
@@ -46,7 +50,7 @@ namespace CapaEntidades
          */
         public override string ToString()
         {
-            return $"Id: {id}, nombre: {nombre}, descripción: {descripcion}";
+            return nombre;
         }
 
 

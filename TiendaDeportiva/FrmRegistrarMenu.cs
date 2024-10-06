@@ -18,11 +18,14 @@ namespace TiendaDeportiva
 {
     public partial class FrmRegistrarMenu : Form
     {
+        #region Constructor
         public FrmRegistrarMenu()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region Métodos
         private void btnNuevoAdministrador_Click(object sender, EventArgs e)
         {
             FrmRegistrarAdministrador frm = new FrmRegistrarAdministrador();
@@ -65,5 +68,7 @@ namespace TiendaDeportiva
             FrmRegistrarArticuloXSucursal frm = new FrmRegistrarArticuloXSucursal();
             frm.ShowDialog();
         }
+        #endregion
+
     }
 }

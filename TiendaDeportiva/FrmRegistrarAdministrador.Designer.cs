@@ -43,6 +43,7 @@
             this.lblFechaNacimiento = new System.Windows.Forms.Label();
             this.lblFechaIngreso = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
+            this.lblMensaje = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -191,11 +192,22 @@
             this.lblId.TabIndex = 15;
             this.lblId.Text = "ID Administrador:";
             // 
+            // lblMensaje
+            // 
+            this.lblMensaje.AutoSize = true;
+            this.lblMensaje.Location = new System.Drawing.Point(330, 360);
+            this.lblMensaje.Name = "lblMensaje";
+            this.lblMensaje.Size = new System.Drawing.Size(107, 13);
+            this.lblMensaje.TabIndex = 16;
+            this.lblMensaje.Text = "Mensajes del sistema";
+            this.lblMensaje.Visible = false;
+            // 
             // FrmRegistrarAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(793, 464);
+            this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblFechaIngreso);
             this.Controls.Add(this.lblFechaNacimiento);
@@ -236,5 +248,6 @@
         private System.Windows.Forms.Label lblFechaNacimiento;
         private System.Windows.Forms.Label lblFechaIngreso;
         private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Label lblMensaje;
     }
 }

@@ -43,6 +43,7 @@
             this.lblDireccion = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblActivo = new System.Windows.Forms.Label();
+            this.lblMensaje = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAtras
@@ -100,6 +101,7 @@
             // 
             // cmbAdministrador
             // 
+            this.cmbAdministrador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAdministrador.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAdministrador.FormattingEnabled = true;
             this.cmbAdministrador.Location = new System.Drawing.Point(412, 171);
@@ -194,11 +196,22 @@
             this.lblActivo.TabIndex = 14;
             this.lblActivo.Text = "Activo:";
             // 
+            // lblMensaje
+            // 
+            this.lblMensaje.AutoSize = true;
+            this.lblMensaje.Location = new System.Drawing.Point(392, 343);
+            this.lblMensaje.Name = "lblMensaje";
+            this.lblMensaje.Size = new System.Drawing.Size(107, 13);
+            this.lblMensaje.TabIndex = 18;
+            this.lblMensaje.Text = "Mensajes del sistema";
+            this.lblMensaje.Visible = false;
+            // 
             // FrmRegistrarSucursal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.lblActivo);
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.lblDireccion);
@@ -239,5 +252,6 @@
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Label lblActivo;
+        private System.Windows.Forms.Label lblMensaje;
     }
 }

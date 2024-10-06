@@ -18,23 +18,26 @@ namespace TiendaDeportiva
 {
     public partial class FrmMenuPrincipal : Form
     {
+        #region Constructor
         public FrmMenuPrincipal()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region Métodos
         // Referencia sobre .ShowDialog tomada de https://meeraacademy.com/show-vs-showdialog-in-c-windows-forms-application/
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            // Oculta FrmPrincipal y muestra FrmRegistrarMenu
             FrmRegistrarMenu frm = new FrmRegistrarMenu();
-            this.Hide();
             frm.ShowDialog();
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-
+            FrmConsultar frm = new FrmConsultar();
+            frm.ShowDialog();
         }
+        #endregion
     }
 }

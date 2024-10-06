@@ -10,6 +10,10 @@ using CapaEntidades;
  * Proyecto I: Programa que permite la administración de una Tienda Deportiva
  * Estudiante: Mario Sánchez Gamboa
  * Fecha: 04/10/2024
+ *
+ * Esta clase está inspirada en el modelo de capas explicado en el video
+ * 0830 Programación Avanzada Sesión Virtual 1" de Johan Acosta Ibañez.
+ * Enlace: https://www.youtube.com/watch?v=2ZOUapJjgpg&feature=youtu.be
  */
 
 namespace CapaLogicaNegocio
@@ -56,6 +60,35 @@ namespace CapaLogicaNegocio
         {
             return SucursalAD.Consultar();
         }
+
+
+        public Sucursal Consultar(string nombre)
+        {
+            try
+            {
+                Sucursal[] arregloSucursal = SucursalAD.Consultar();
+
+                if (arregloSucursal != null)
+                {
+                    for (int i = 0; i < arregloSucursal.Length; i++)
+                    {
+                        if (arregloSucursal[i] != null && arregloSucursal[i].Nombre.Equals(nombre))
+                        {
+                            return arregloSucursal[i];
+                        }
+                    }
+
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
         #endregion
+
+
+
     }
 }

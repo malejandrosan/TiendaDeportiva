@@ -37,6 +37,7 @@
             this.cmbSucursal = new System.Windows.Forms.ComboBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.dgvConsulta = new System.Windows.Forms.DataGridView();
+            this.lblMensaje = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +86,7 @@
             // 
             this.btnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnAtras.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.Location = new System.Drawing.Point(266, 392);
+            this.btnAtras.Location = new System.Drawing.Point(266, 400);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(115, 38);
             this.btnAtras.TabIndex = 4;
@@ -97,7 +98,7 @@
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(455, 392);
+            this.btnAceptar.Location = new System.Drawing.Point(455, 400);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(115, 38);
             this.btnAceptar.TabIndex = 5;
@@ -131,11 +132,22 @@
             this.dgvConsulta.Size = new System.Drawing.Size(304, 150);
             this.dgvConsulta.TabIndex = 8;
             // 
+            // lblMensaje
+            // 
+            this.lblMensaje.AutoSize = true;
+            this.lblMensaje.Location = new System.Drawing.Point(351, 374);
+            this.lblMensaje.Name = "lblMensaje";
+            this.lblMensaje.Size = new System.Drawing.Size(107, 13);
+            this.lblMensaje.TabIndex = 18;
+            this.lblMensaje.Text = "Mensajes del sistema";
+            this.lblMensaje.Visible = false;
+            // 
             // FrmRegistrarArticuloXSucursal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.dgvConsulta);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.cmbSucursal);
@@ -165,5 +177,6 @@
         private System.Windows.Forms.ComboBox cmbSucursal;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.DataGridView dgvConsulta;
+        private System.Windows.Forms.Label lblMensaje;
     }
 }

@@ -43,6 +43,7 @@
             this.cmbActivo = new System.Windows.Forms.ComboBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.lblActivo = new System.Windows.Forms.Label();
+            this.lblMensaje = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -194,11 +195,22 @@
             this.lblActivo.TabIndex = 15;
             this.lblActivo.Text = "Activo:";
             // 
+            // lblMensaje
+            // 
+            this.lblMensaje.AutoSize = true;
+            this.lblMensaje.Location = new System.Drawing.Point(342, 352);
+            this.lblMensaje.Name = "lblMensaje";
+            this.lblMensaje.Size = new System.Drawing.Size(107, 13);
+            this.lblMensaje.TabIndex = 18;
+            this.lblMensaje.Text = "Mensajes del sistema";
+            this.lblMensaje.Visible = false;
+            // 
             // FrmRegistrarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.lblActivo);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.cmbActivo);
@@ -239,5 +251,6 @@
         private System.Windows.Forms.ComboBox cmbActivo;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Label lblActivo;
+        private System.Windows.Forms.Label lblMensaje;
     }
 }

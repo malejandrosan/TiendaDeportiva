@@ -35,6 +35,11 @@ namespace TiendaDeportiva
                 txtId.Focus();
                 return "Debe ingresar el número identificación";
             }
+            if (!int.TryParse(txtId.Text, out int resultado))
+            {
+                txtId.Focus();
+                return "Debe ingresar un número de identificación válido";
+            }
             if (string.IsNullOrWhiteSpace(txtNombre.Text))
             {
                 txtNombre.Focus();
@@ -73,6 +78,25 @@ namespace TiendaDeportiva
             cmbActivo.SelectedIndex = -1;
         }
 
+        // Información tomada de: 
+        // https://stackoverflow.com/questions/15951689/show-label-text-as-warning-message-and-hide-it-after-a-few-seconds
+        private void MostrarMensaje(string mensaje, Color color)
+        {
+            lblMensaje.Text = mensaje;
+            lblMensaje.ForeColor = color;
+            lblMensaje.Visible = true;
+
+            // Temporizador para mostrar mensaje del label por 3 segundos y desaparecerlo
+            Timer timer = new Timer();
+            timer.Interval = 3000;
+            timer.Tick += (s, e) =>
+            {
+                lblMensaje.Visible = false;
+                timer.Stop();
+                timer.Dispose();
+            };
+            timer.Start();
+        }
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -100,16 +124,16 @@ namespace TiendaDeportiva
                     if (IngresoCorrecto)
                     {
                         LimpiarPantalla();
-                        MessageBox.Show("Se ha ingresado el registro correctamente");
+                        MostrarMensaje("Se ha ingresado el registro correctamente", Color.Green);
                     }
                     else
                     {
-                        MessageBox.Show("No se ha ingresado correctamente");
+                        MostrarMensaje("No se ha ingresado correctamente", Color.Red);
                     }
                 }
                 else
                 {
-                    MessageBox.Show(mensajeValidacion);
+                    MostrarMensaje(mensajeValidacion, Color.Red);  
                 }
             }
             catch (Exception ex)

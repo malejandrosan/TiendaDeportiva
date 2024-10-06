@@ -22,3 +22,4 @@ C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\CapaAcceso
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\CapaLogicaNegocio.pdb
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\bin\Debug\CapaAccesoDatos.pdb
 C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmMenuPrincipal.resources
+C:\Users\MARIO\source\repos\TiendaDeportiva\TiendaDeportiva\obj\Debug\TiendaDeportiva.FrmConsultar.resources

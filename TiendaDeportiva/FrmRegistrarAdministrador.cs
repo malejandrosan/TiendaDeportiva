@@ -20,10 +20,12 @@ namespace TiendaDeportiva
 {
     public partial class FrmRegistrarAdministrador : Form
     {
+        #region Constructor
         public FrmRegistrarAdministrador()
         {
             InitializeComponent();
         }
+        #endregion
 
         #region Métodos
         private string ValidaDatos()
@@ -33,17 +35,22 @@ namespace TiendaDeportiva
                 txtId.Focus();
                 return "Debe ingresar un número de identificación";
             }
+            if (!int.TryParse(txtId.Text, out int resultado))
+            {
+                txtId.Focus();
+                return "Debe ingresar una identificación válida";
+            }
             if (string.IsNullOrWhiteSpace(txtNombre.Text))
             {
                 txtNombre.Focus();
-                return "Debe ingresar un nombre";
+                return "Debe ingresar el nombre";
             }
-            if (string.IsNullOrEmpty(txtApellido1.Text))
+            if (string.IsNullOrWhiteSpace(txtApellido1.Text))
             {
                 txtApellido1.Focus();
                 return "Debe ingresar el primer apellido";
             }
-            if (string.IsNullOrEmpty(txtApellido2.Text))
+            if (string.IsNullOrWhiteSpace(txtApellido2.Text))
             {
                 txtApellido2.Focus();
                 return "Debe ingresar el segundo apellido";
@@ -61,6 +68,28 @@ namespace TiendaDeportiva
             dtpFechaNacimiento.ResetText();
             dtpFechaIngreso.ResetText();
         }
+
+
+        // Información tomada de: 
+        // https://stackoverflow.com/questions/15951689/show-label-text-as-warning-message-and-hide-it-after-a-few-seconds
+        private void MostrarMensaje(string mensaje, Color color)
+        {
+            lblMensaje.Text = mensaje;
+            lblMensaje.ForeColor = color;
+            lblMensaje.Visible = true;
+
+            // Temporizador para mostrar mensaje del label por 3 segundos y desaparecerlo
+            Timer timer = new Timer();
+            timer.Interval = 3000;
+            timer.Tick += (s, e) =>
+            {
+                lblMensaje.Visible = false;
+                timer.Stop();
+                timer.Dispose();
+            };
+            timer.Start();
+        }
+
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
@@ -84,16 +113,16 @@ namespace TiendaDeportiva
                     if (esIngresoCorrecto)
                     {
                         LimpiarPantalla();
-                        MessageBox.Show("El registro se ha ingresado correctamente");
+                        MostrarMensaje("El registro se ha ingresado correctamente", Color.Green);
                     }
                     else
                     {
-                        MessageBox.Show("No se ha podido ingresar correctamente");
+                        MostrarMensaje("No se ha podido ingresar correctamente", Color.Red);
                     }    
                 }
                 else
                 {
-                    MessageBox.Show(mensajeValidacion);
+                    MostrarMensaje(mensajeValidacion, Color.Red);
                 }
             }
             catch (Exception ex)
