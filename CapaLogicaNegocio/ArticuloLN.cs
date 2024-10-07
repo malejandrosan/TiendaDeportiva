@@ -9,7 +9,7 @@ using CapaEntidades;
 /* UNED III Cuatrimestre
  * Proyecto I: Programa que permite la administración de una Tienda Deportiva
  * Estudiante: Mario Sánchez Gamboa
- * Fecha: 29/09/2024
+ * Fecha: 06/10/2024
  * 
  * Esta clase está inspirada en el modelo de capas explicado en el video
  * 0830 Programación Avanzada Sesión Virtual 1" de Johan Acosta Ibañez.
@@ -21,6 +21,11 @@ namespace CapaLogicaNegocio
     public class ArticuloLN
     {
         #region Métodos
+        // <summary>
+        // Guarda el objeto en caso de que no haya un duplicado
+        // Retorna True cuando se guarda satisfactoriamente
+        // Retorna False cuando ya está registrado
+        // <summary>
         public bool Guardar(Articulo articulo)
         {
             try
@@ -59,6 +64,74 @@ namespace CapaLogicaNegocio
         public Articulo[] Consultar()
         {
             return ArticuloAD.Consultar();
+        }
+
+        // <summary>
+        // Consulta y retorna el objeto Articulo existente con el nombre dado de parámetro
+        // <summary>
+        public Articulo Consultar(int id)
+        {
+            try
+            {
+                Articulo[] arregloArticulos = ArticuloAD.Consultar();
+
+                if (arregloArticulos != null)
+                {
+                    for (int i = 0; i < arregloArticulos.Length; i++)
+                    {
+                        if (arregloArticulos[i] != null && arregloArticulos[i].Id == id)
+                        {
+                            return arregloArticulos[i];
+                        }
+                    }
+                }
+                return null;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+        // <summary>
+        // Retorna arreglo Articulo con solo los articulos activos
+        // <summary>
+        public Articulo[] ConsultarActivos()
+        {
+            Articulo[] arregloArticulos = ArticuloAD.Consultar();
+            int cantidadActivos = ContarArticulosActivos();
+            Articulo[] arregloArticulosActivos = new Articulo[cantidadActivos];
+            int indice = 0;
+
+            for (int i = 0; i < arregloArticulos.Length; i++)
+            {
+                if (arregloArticulos[i] != null && arregloArticulos[i].Activo)
+                {
+                    arregloArticulosActivos[indice] = arregloArticulos[i];
+                    indice++;
+                }
+            }
+            return arregloArticulosActivos;
+        }
+
+
+        // <summary>
+        // Retorna un entero con la cantidad de articulos activos
+        // <summary>
+        public int ContarArticulosActivos()
+        {
+            Articulo[] arregloArticulos = ArticuloAD.Consultar();
+            int contador = 0;
+
+            foreach (Articulo articulo in arregloArticulos)
+            {
+                if (articulo != null && articulo.Activo)
+                {
+                    contador++;
+                }
+            }
+            return contador;
         }
         #endregion
 

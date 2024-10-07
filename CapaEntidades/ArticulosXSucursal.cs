@@ -18,17 +18,19 @@ namespace CapaEntidades
 {
     public class ArticulosXSucursal
     {
-        // Atributos
+        #region Atributos
         private Sucursal sucursal;
         private Articulo articulo;
         private int cantidad;
+        #endregion
 
-        // Métodos Get y Set
+        #region Métodos Get y Set
         public Sucursal Sucursal { get => sucursal; set => sucursal = value; }
         public Articulo Articulo { get => articulo; set => articulo = value; }
         public int Cantidad { get => cantidad; set => cantidad = value; }
+        #endregion
 
-        // Constructores de la clase
+        #region Constructores
         public ArticulosXSucursal() 
         { 
             sucursal = new Sucursal();
@@ -42,11 +44,13 @@ namespace CapaEntidades
             this.articulo = articulo;
             this.cantidad = cantidad;
         }
+        #endregion
 
-        // Métodos
+        #region Método ToString
         public override string ToString()
         {
             return $"Sucursal: {sucursal.Id}, artículo:{articulo.Id}, cantidad: {cantidad}";
         }
+        #endregion
     }
 }

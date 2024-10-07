@@ -35,32 +35,32 @@ namespace TiendaDeportiva
                 txtId.Focus();
                 return "Debe ingresar el ID";
             }
-            if (!int.TryParse(txtId.Text, out int resultado))
+            else if (!int.TryParse(txtId.Text, out int resultado))
             {
                 txtId.Focus();
                 return "Debe ingresar un id válido";
             }
-            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            else if (string.IsNullOrWhiteSpace(txtNombre.Text))
             {
                 txtNombre.Focus();
                 return "Debe ingresar el nombre";
             }
-            if (string.IsNullOrWhiteSpace(cmbAdministrador.Text))
+            else if (string.IsNullOrWhiteSpace(cmbAdministrador.Text))
             {
                 cmbAdministrador.Focus();
                 return "Debe ingresar el administrador";
             }
-            if (string.IsNullOrWhiteSpace (txtDireccion.Text))
+            else if (string.IsNullOrWhiteSpace (txtDireccion.Text))
             {
                 txtDireccion.Focus();
                 return "Debe ingresar la dirección";
             }
-            if (string.IsNullOrWhiteSpace(txtTelefono.Text))
+            else if (string.IsNullOrWhiteSpace(txtTelefono.Text))
             {
                 txtTelefono.Focus();
                 return "Debe ingresar el número de teléfono";
             }
-            if (string.IsNullOrWhiteSpace(cmbActivo.Text))
+            else if (string.IsNullOrWhiteSpace(cmbActivo.Text))
             {
                 cmbActivo.Focus();
                 return "Debe ingresar si es activo o no";
@@ -139,6 +139,7 @@ namespace TiendaDeportiva
         {
             try
             {
+                bool hayAdministradores = false;
                 AdministradorLN administradorLN = new AdministradorLN();
                 Administrador[] arregloAdministradores = administradorLN.Consultar();
 
@@ -148,14 +149,20 @@ namespace TiendaDeportiva
                     {
                         if (administrador != null)
                         {
+                            hayAdministradores = true;
                             cmbAdministrador.Items.Add(administrador);
                         }
                     }
                 }
+                if (!hayAdministradores)
+                {
+                    this.Close();
+                    throw new Exception("Debe registrar un administrador primero");
+                }
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
         #endregion

@@ -22,6 +22,11 @@ namespace CapaLogicaNegocio
     {
 
         #region Métodos
+        // <summary>
+        // Guarda el objeto en caso de que no haya un duplicado
+        // Retorna True cuando se guarda satisfactoriamente
+        // Retorna False cuando ya está registrado
+        // <summary>
         public bool Guardar(Administrador administrador)
         {
             try
@@ -63,6 +68,9 @@ namespace CapaLogicaNegocio
             return AdministradorAD.Consultar();
         }
 
+        // <summary>
+        // Consulta y retorna el objeto Administrador existente con el nombre dado de parámetro
+        // <summary>
         public Administrador Consultar(string nombre)
         {
             try
@@ -78,7 +86,6 @@ namespace CapaLogicaNegocio
                             return arregloAdministradores[i];
                         }
                     }
-
                 }
                 return null;
             }

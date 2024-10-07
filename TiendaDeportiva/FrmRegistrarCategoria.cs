@@ -35,17 +35,17 @@ namespace TiendaDeportiva
                 txtId.Focus();
                 return "Debe ingresar el id";
             }
-            if (!int.TryParse(txtId.Text, out int resultado))
+            else if (!int.TryParse(txtId.Text, out int resultado))
             {
                 txtId.Focus();
                 return "Debe ingresar un id válido";
             }
-            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            else if (string.IsNullOrWhiteSpace(txtNombre.Text))
             {
                 txtNombre.Focus();
                 return "Debe ingresar el nombre";
             }
-            if (string.IsNullOrWhiteSpace(txtDescripcion.Text))
+            else if (string.IsNullOrWhiteSpace(txtDescripcion.Text))
             {
                 txtNombre.Focus();
                 return "Debe ingresar la descripción";

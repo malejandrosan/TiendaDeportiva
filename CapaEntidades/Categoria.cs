@@ -18,18 +18,19 @@ namespace CapaEntidades
 {
     public class Categoria
     {
-        // Atributos
+        #region Atributos
         private int id;
         private string nombre;
         private string descripcion;
+        #endregion
 
-        // Métodos Get y Set
+        #region Métodos Get y Set
         public int Id { get => id; set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Descripcion { get => descripcion; set => descripcion = value; }
+        #endregion
 
-
-        // Constructores de la clase
+        #region Constructores
         public Categoria()
         {
             id = 0;
@@ -43,12 +44,14 @@ namespace CapaEntidades
             this.nombre = nombre;
             this.descripcion = descripcion;
         }
+        #endregion
 
+        #region Método ToString
         public override string ToString()
         {
             return nombre;
         }
-
+        #endregion
 
     }
 }

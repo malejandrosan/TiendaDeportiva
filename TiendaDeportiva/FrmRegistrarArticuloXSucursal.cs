@@ -10,6 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* UNED III Cuatrimestre
+ * Proyecto I: Programa que permite la administración de una Tienda Deportiva
+ * Estudiante: Mario Sánchez Gamboa
+ * Fecha: 06/09/2024
+ */
+
 namespace TiendaDeportiva
 {
     public partial class FrmRegistrarArticuloXSucursal : Form
@@ -29,12 +35,12 @@ namespace TiendaDeportiva
                 cmbSucursal.Focus();
                 return "Debe ingresar la sucursal";
             }
-            if (string.IsNullOrWhiteSpace(txtCantidad.Text))
+            else if (string.IsNullOrWhiteSpace(txtCantidad.Text))
             {
                 txtCantidad.Focus();
                 return "Debe ingresar la cantidad";
             }
-            if (!int.TryParse(txtCantidad.Text, out int resultado))
+            else if (!int.TryParse(txtCantidad.Text, out int resultado))
             {
                 txtCantidad.Focus();
                 return "Debe ingresar una cantidad válida";
@@ -57,6 +63,7 @@ namespace TiendaDeportiva
             lblMensaje.Visible = true;
 
             // Temporizador para mostrar mensaje del label por 3 segundos y desaparecerlo
+            // utilizando un método anónimo
             Timer timer = new Timer();
             timer.Interval = 3000;
             timer.Tick += (s, e) =>
@@ -78,20 +85,31 @@ namespace TiendaDeportiva
                 string mensajeValidacion = ValidaDatos();
                 if (string.IsNullOrEmpty(mensajeValidacion))
                 {
-                    ArticulosXSucursal articulosXSucursal = new ArticulosXSucursal();
-
-
-                    ArticuloXSucursalLN articuloXSucursalLN = new ArticuloXSucursalLN();
-                    bool IngresoCorrecto = articuloXSucursalLN.Guardar(articulosXSucursal);
-
-                    if (IngresoCorrecto)
+                    // Recorre cada fila seleccionada
+                    foreach (DataGridViewRow row in dgvArticulos.SelectedRows)
                     {
-                        LimpiarPantalla();
-                        MostrarMensaje("Se ha agregado el registro correctamente", Color.Green);
-                    }
-                    else
-                    {
-                        MostrarMensaje("No se ha podido ingresar correctamente", Color.Red);
+                        // Obtiene el objeto Articulo mediante el id
+                        ArticuloLN articuloLN = new ArticuloLN();
+                        Articulo articulo = articuloLN.Consultar(Convert.ToInt32(row.Cells[0].Value));
+                        
+                        // Obtiene el objeto Sucursal mediante el nombre
+                        SucursalLN sucursalLN = new SucursalLN();
+                        Sucursal sucursal = sucursalLN.Consultar(cmbSucursal.Text);
+
+                        // Crea instancia y almacena cada fila seleccionada
+                        ArticulosXSucursal articulosXSucursal = new ArticulosXSucursal(sucursal, articulo, Convert.ToInt32(txtCantidad.Text));
+                        ArticuloXSucursalLN articuloXSucursalLN = new ArticuloXSucursalLN();
+                        bool IngresoCorrecto = articuloXSucursalLN.Guardar(articulosXSucursal);
+
+                        if (IngresoCorrecto)
+                        {
+                            LimpiarPantalla();
+                            MostrarMensaje("Se ha agregado el registro correctamente", Color.Green);
+                        }
+                        else
+                        {
+                            MostrarMensaje("No se ha podido ingresar correctamente", Color.Red);
+                        }
                     }
                 }
                 else
@@ -104,33 +122,50 @@ namespace TiendaDeportiva
                 MessageBox.Show("Un error ha ocurrido. Contacte al administrador del sistema");
             }
         }
+
         private void FrmRegistrarArticuloXSucursal_Load(object sender, EventArgs e)
         {
             try
             {
-                // Carga articulos al datagridview
+                // Reset y obtiene arreglo de los articulos activos
                 dgvArticulos.Rows.Clear();
                 ArticuloLN articuloLN = new ArticuloLN();
-                Articulo[] arregloArticulos = articuloLN.Consultar();
-                dgvArticulos.DataSource = arregloArticulos;
+                Articulo[] arregloArticulosActivos = articuloLN.ConsultarActivos();
+                int cantidadArticulosActivos = articuloLN.ContarArticulosActivos();
 
-                // Carga sucursales al combobox
+                if (cantidadArticulosActivos <= 0)
+                {
+                    this.Close();
+                    throw new Exception("Debe registrar un artículo activo");
+                }
+
+                // Carga articulos activos al datagridview
+                dgvArticulos.DataSource = arregloArticulosActivos;
+
+                // Obtiene arreglo de sucursales
+                bool haySucursales = false;
                 SucursalLN sucursalLN = new SucursalLN();
                 Sucursal[] arregloSucursales = sucursalLN.Consultar();
 
+                // Carga las sucursales activas al combobox
                 foreach (Sucursal sucursal in arregloSucursales)
                 {
-                    if (sucursal != null)
+                    if (sucursal != null && sucursal.Activo)
                     {
+                        haySucursales = true;
                         cmbSucursal.Items.Add(sucursal.Nombre);
                     }
+                }
+                if (!haySucursales)
+                {
+                    this.Close();
+                    throw new Exception("Debe registrar una sucursal activa");
                 }
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                MessageBox.Show(ex.Message);
             }
-            
         }
         #endregion
     }

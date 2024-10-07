@@ -21,6 +21,11 @@ namespace CapaLogicaNegocio
     public class SucursalLN
     {
         #region Métodos
+        // <summary>
+        // Guarda el objeto en caso de que no haya un duplicado
+        // Retorna True cuando se guarda satisfactoriamente
+        // Retorna False cuando ya está registrado
+        // <summary>
         public bool Guardar(Sucursal sucursal)
         {
             try
@@ -61,7 +66,9 @@ namespace CapaLogicaNegocio
             return SucursalAD.Consultar();
         }
 
-
+        // <summary>
+        // Consulta y retorna el objeto Sucursal existente con el nombre dado de parámetro
+        // <summary>
         public Sucursal Consultar(string nombre)
         {
             try
@@ -87,8 +94,5 @@ namespace CapaLogicaNegocio
             }
         }
         #endregion
-
-
-
     }
 }

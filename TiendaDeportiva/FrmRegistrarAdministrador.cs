@@ -35,22 +35,22 @@ namespace TiendaDeportiva
                 txtId.Focus();
                 return "Debe ingresar un número de identificación";
             }
-            if (!int.TryParse(txtId.Text, out int resultado))
+            else if (!int.TryParse(txtId.Text, out int resultado))
             {
                 txtId.Focus();
                 return "Debe ingresar una identificación válida";
             }
-            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            else if (string.IsNullOrWhiteSpace(txtNombre.Text))
             {
                 txtNombre.Focus();
                 return "Debe ingresar el nombre";
             }
-            if (string.IsNullOrWhiteSpace(txtApellido1.Text))
+            else if (string.IsNullOrWhiteSpace(txtApellido1.Text))
             {
                 txtApellido1.Focus();
                 return "Debe ingresar el primer apellido";
             }
-            if (string.IsNullOrWhiteSpace(txtApellido2.Text))
+            else if (string.IsNullOrWhiteSpace(txtApellido2.Text))
             {
                 txtApellido2.Focus();
                 return "Debe ingresar el segundo apellido";
@@ -70,7 +70,7 @@ namespace TiendaDeportiva
         }
 
 
-        // Información tomada de: 
+        // Información del temporizador tomada de: 
         // https://stackoverflow.com/questions/15951689/show-label-text-as-warning-message-and-hide-it-after-a-few-seconds
         private void MostrarMensaje(string mensaje, Color color)
         {

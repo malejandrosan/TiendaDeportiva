@@ -18,23 +18,25 @@ namespace CapaEntidades
 {
     public class Cliente
     {
-        // Atributos
+        #region Atributos
         private int id;
         private string nombre;
         private string apellido1;
         private string apellido2;
         private DateTime fechaNacimiento;
         private bool activo;
+        #endregion
 
-        // Métodos Get y Set
+        #region Métodos Get y Set
         public int Id { get => id; set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido1 { get => apellido1; set => apellido1 = value; }
         public string Apellido2 { get => apellido2; set => apellido2 = value; }
         public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
         public bool Activo { get => activo; set => activo = value; }
+        #endregion
 
-        // Constructores de la clase
+        #region Constructores
         public Cliente() 
         {
             id = 0;
@@ -54,11 +56,14 @@ namespace CapaEntidades
             this.fechaNacimiento = fechaNacimiento;
             this.activo = activo;
         }
+        #endregion
 
-        // Métodos
+        #region Método ToString
         public override string ToString()
         {
             return $"Id: {id}, nombre: {nombre}, apellido 1: {apellido1}, apellido 2: {apellido2}, fecha de nacimiento: {fechaNacimiento}, activo: {activo}";
         }
+        #endregion
+
     }
 }

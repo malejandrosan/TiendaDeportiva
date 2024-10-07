@@ -10,6 +10,16 @@ using System.Windows.Forms;
 using CapaEntidades;
 using CapaLogicaNegocio;
 
+/* UNED III Cuatrimestre
+ * Proyecto I: Programa que permite la administración de una Tienda Deportiva
+ * Estudiante: Mario Sánchez Gamboa
+ * Fecha: 29/09/2024
+ *
+ * Esta clase está inspirada en el modelo de capas explicado en el video
+ * 0830 Programación Avanzada Sesión Virtual 1" de Johan Acosta Ibañez.
+ * Enlace: https://www.youtube.com/watch?v=2ZOUapJjgpg&feature=youtu.be
+ */
+
 namespace TiendaDeportiva
 {
     public partial class FrmRegistrarArticulo : Form
@@ -29,27 +39,27 @@ namespace TiendaDeportiva
                     txtId.Focus();
                     return "Debe ingresar un número id";
                 }
-                if (!int.TryParse(txtId.Text, out int resultado))
+                else if (!int.TryParse(txtId.Text, out int resultado))
                 {
                     txtId.Focus();
                     return "Debe ingresar un id válido";
                 }
-                if (string.IsNullOrWhiteSpace(txtDescripcion.Text))
+                else if (string.IsNullOrWhiteSpace(txtDescripcion.Text))
                 {
                     txtDescripcion.Focus();
                     return "Debe ingresar una descripción";
                 }
-                if (string.IsNullOrWhiteSpace(txtMarca.Text))
+                else if (string.IsNullOrWhiteSpace(txtMarca.Text))
                 {
                     txtMarca.Focus();
                     return "Debe ingresar una marca";
                 }
-                if (string.IsNullOrWhiteSpace(cmbCategoria.Text))
+                else if (string.IsNullOrWhiteSpace(cmbCategoria.Text))
                 {
                     cmbCategoria.Focus();
                     return "Debe seleccionar una categoría";
                 }
-                if (string.IsNullOrWhiteSpace(cmbActivo.Text))
+                else if (string.IsNullOrWhiteSpace(cmbActivo.Text))
                 {
                     cmbActivo.Focus();
                     return "Debe seleccionar si se encuentra activo o no";
@@ -142,6 +152,7 @@ namespace TiendaDeportiva
         {
             try
             {
+                bool hayCategorias = false;
                 CategoriaLN categoriaLN = new CategoriaLN();
                 Categoria[] arregloCategorias = categoriaLN.Consultar();
 
@@ -149,8 +160,14 @@ namespace TiendaDeportiva
                 {
                     if (categoria != null)
                     {
+                        hayCategorias = true;
                         cmbCategoria.Items.Add(categoria.Nombre);
                     }
+                }
+                if (!hayCategorias)
+                {
+                    this.Close();
+                    throw new Exception("Debe registrar una categoría primero");
                 }
             }
             catch (Exception ex)

@@ -21,6 +21,11 @@ namespace CapaLogicaNegocio
     public class CategoriaLN
     {
         #region Métodos
+        // <summary>
+        // Guarda el objeto en caso de que no haya un duplicado
+        // Retorna True cuando se guarda satisfactoriamente
+        // Retorna False cuando ya está registrado
+        // <summary>
         public bool Guardar(Categoria categoria)
         {
             try
@@ -61,6 +66,10 @@ namespace CapaLogicaNegocio
             return CategoriaAD.Consultar();
         }
 
+
+        // <summary>
+        // Consulta y retorna el objeto Categoria existente con el nombre dado de parámetro
+        // <summary>
         public Categoria Consultar(string nombre)
         {
             try
@@ -84,9 +93,6 @@ namespace CapaLogicaNegocio
                 throw new Exception(ex.Message);
             }
         }
-
-
-
         #endregion
     }
 }

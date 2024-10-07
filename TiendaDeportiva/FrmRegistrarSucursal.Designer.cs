@@ -50,7 +50,7 @@
             // 
             this.btnAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnAtras.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.Location = new System.Drawing.Point(279, 370);
+            this.btnAtras.Location = new System.Drawing.Point(247, 370);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(115, 38);
             this.btnAtras.TabIndex = 0;
@@ -85,7 +85,7 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(276, 98);
+            this.lblId.Location = new System.Drawing.Point(244, 99);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(68, 15);
             this.lblId.TabIndex = 3;
@@ -94,7 +94,7 @@
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(412, 91);
+            this.txtId.Location = new System.Drawing.Point(393, 91);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(200, 23);
             this.txtId.TabIndex = 4;
@@ -104,7 +104,7 @@
             this.cmbAdministrador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAdministrador.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAdministrador.FormattingEnabled = true;
-            this.cmbAdministrador.Location = new System.Drawing.Point(412, 171);
+            this.cmbAdministrador.Location = new System.Drawing.Point(393, 171);
             this.cmbAdministrador.Name = "cmbAdministrador";
             this.cmbAdministrador.Size = new System.Drawing.Size(200, 23);
             this.cmbAdministrador.TabIndex = 5;
@@ -112,7 +112,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(412, 132);
+            this.txtNombre.Location = new System.Drawing.Point(393, 132);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(200, 23);
             this.txtNombre.TabIndex = 6;
@@ -120,7 +120,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Location = new System.Drawing.Point(412, 216);
+            this.txtDireccion.Location = new System.Drawing.Point(393, 216);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(200, 23);
             this.txtDireccion.TabIndex = 7;
@@ -128,7 +128,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(412, 259);
+            this.txtTelefono.Location = new System.Drawing.Point(393, 259);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(200, 23);
             this.txtTelefono.TabIndex = 8;
@@ -141,7 +141,7 @@
             this.cmbActivo.Items.AddRange(new object[] {
             "Si",
             "No"});
-            this.cmbActivo.Location = new System.Drawing.Point(412, 302);
+            this.cmbActivo.Location = new System.Drawing.Point(393, 302);
             this.cmbActivo.Name = "cmbActivo";
             this.cmbActivo.Size = new System.Drawing.Size(200, 23);
             this.cmbActivo.TabIndex = 9;
@@ -150,7 +150,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(276, 139);
+            this.lblNombre.Location = new System.Drawing.Point(244, 140);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(54, 15);
             this.lblNombre.TabIndex = 10;
@@ -160,7 +160,7 @@
             // 
             this.lblAdministrador.AutoSize = true;
             this.lblAdministrador.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdministrador.Location = new System.Drawing.Point(276, 179);
+            this.lblAdministrador.Location = new System.Drawing.Point(244, 179);
             this.lblAdministrador.Name = "lblAdministrador";
             this.lblAdministrador.Size = new System.Drawing.Size(86, 15);
             this.lblAdministrador.TabIndex = 11;
@@ -170,7 +170,7 @@
             // 
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccion.Location = new System.Drawing.Point(276, 219);
+            this.lblDireccion.Location = new System.Drawing.Point(244, 219);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(60, 15);
             this.lblDireccion.TabIndex = 12;
@@ -180,7 +180,7 @@
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono.Location = new System.Drawing.Point(276, 262);
+            this.lblTelefono.Location = new System.Drawing.Point(244, 262);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(55, 15);
             this.lblTelefono.TabIndex = 13;
@@ -190,7 +190,7 @@
             // 
             this.lblActivo.AutoSize = true;
             this.lblActivo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActivo.Location = new System.Drawing.Point(276, 305);
+            this.lblActivo.Location = new System.Drawing.Point(244, 305);
             this.lblActivo.Name = "lblActivo";
             this.lblActivo.Size = new System.Drawing.Size(44, 15);
             this.lblActivo.TabIndex = 14;
@@ -199,7 +199,7 @@
             // lblMensaje
             // 
             this.lblMensaje.AutoSize = true;
-            this.lblMensaje.Location = new System.Drawing.Point(392, 343);
+            this.lblMensaje.Location = new System.Drawing.Point(360, 344);
             this.lblMensaje.Name = "lblMensaje";
             this.lblMensaje.Size = new System.Drawing.Size(107, 13);
             this.lblMensaje.TabIndex = 18;

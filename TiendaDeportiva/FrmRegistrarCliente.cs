@@ -35,32 +35,32 @@ namespace TiendaDeportiva
                 txtId.Focus();
                 return "Debe ingresar el número identificación";
             }
-            if (!int.TryParse(txtId.Text, out int resultado))
+            else if (!int.TryParse(txtId.Text, out int resultado))
             {
                 txtId.Focus();
                 return "Debe ingresar un número de identificación válido";
             }
-            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            else if (string.IsNullOrWhiteSpace(txtNombre.Text))
             {
                 txtNombre.Focus();
                 return "Debe ingresar el nombre";
             }
-            if (string.IsNullOrWhiteSpace(txtApellido1.Text))
+            else if (string.IsNullOrWhiteSpace(txtApellido1.Text))
             {
                 txtApellido1.Focus();
                 return "Debe ingresar el primer apellido";
             }
-            if (string.IsNullOrWhiteSpace(txtApellido2.Text))
+            else if (string.IsNullOrWhiteSpace(txtApellido2.Text))
             {
                 txtApellido2.Focus();
                 return "Debe ingresar el segundo apellido";
             }
-            if (string.IsNullOrWhiteSpace(dtpFechaNacimiento.ToString()))
+            else if (string.IsNullOrWhiteSpace(dtpFechaNacimiento.ToString()))
             {
                 dtpFechaNacimiento.Focus();
                 return "Debe ingresar la fecha de nacimiento";
             }
-            if (string.IsNullOrWhiteSpace(cmbActivo.Text))
+            else if (string.IsNullOrWhiteSpace(cmbActivo.Text))
             {
                 cmbActivo.Focus();
                 return "Debe ingresar si es activo o no";

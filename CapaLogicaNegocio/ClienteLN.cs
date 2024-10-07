@@ -21,6 +21,11 @@ namespace CapaLogicaNegocio
     public class ClienteLN
     {
         #region Métodos
+        // <summary>
+        // Guarda el objeto en caso de que no haya un duplicado
+        // Retorna True cuando se guarda satisfactoriamente
+        // Retorna False cuando ya está registrado
+        // <summary>
         public bool Guardar(Cliente cliente)
         {
             try

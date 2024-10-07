@@ -18,23 +18,25 @@ namespace CapaEntidades
 {
     public class Sucursal
     {
-        // Atributos
+        #region Atributos
         private int id;
         private string nombre;
         private Administrador administrador;
         private string direccion;
         private string telefono;
         private bool activo;
-        
-        // Métodos Get y Set
+        #endregion
+
+        #region Métodos Get y Set
         public int Id { get => id; set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public Administrador Administrador { get => administrador; set => administrador = value; }
         public string Direccion { get => direccion; set => direccion = value; }
         public string Telefono { get => telefono; set => telefono = value; }
         public bool Activo { get => activo; set => activo = value; }
+        #endregion
 
-        // Constructores de la clase
+        #region Constructores
         public Sucursal() 
         {
             id = 0;
@@ -54,13 +56,15 @@ namespace CapaEntidades
             this.telefono = telefono;
             this.activo = activo;
         }
+        #endregion
 
 
-        // Métodos
+        #region Método ToString
         public override string ToString()
         {
-            return $"Id: {id}, nombre: {nombre}, administrador: {administrador.Nombre}, dirección: {direccion}, teléfono: {telefono}, activo: {activo}";
+            return $"ID: {id}, nombre: {nombre}, administrador: {administrador.Nombre}, dirección: {direccion}, teléfono: {telefono}, activo: {activo}";
         }
+        #endregion
 
     }
 }

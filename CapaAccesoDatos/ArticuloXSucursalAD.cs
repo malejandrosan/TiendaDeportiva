@@ -8,7 +8,7 @@ using CapaEntidades;
 /* UNED III Cuatrimestre
  * Proyecto I: Programa que permite la administración de una Tienda Deportiva
  * Estudiante: Mario Sánchez Gamboa
- * Fecha: 04/10/2024
+ * Fecha: 06/10/2024
  *
  * Esta clase está inspirada en el modelo de capas explicado en el video
  * 0830 Programación Avanzada Sesión Virtual 1" de Johan Acosta Ibañez.

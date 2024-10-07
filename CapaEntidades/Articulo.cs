@@ -18,22 +18,23 @@ namespace CapaEntidades
 {
     public class Articulo
     {
-        // Atributos
+        #region Atributos
         private int id;
         private string descripcion;
         private Categoria categoria;
         private string marca;
         private bool activo;
+        #endregion
 
-        // Métodos Get y Set
+        #region Métodos Get y Set
         public int Id { get => id; set => id = value; }
         public string Descripcion { get => descripcion; set => descripcion = value; }
         public Categoria Categoria { get => categoria; set => categoria = value; }
         public string Marca { get => marca; set => marca = value; }
         public bool Activo { get => activo; set => activo = value; }
+        #endregion
 
-
-        // Constructores de la clase
+        #region Constructores
         public Articulo()
         {
             id = 0;
@@ -51,14 +52,13 @@ namespace CapaEntidades
             this.marca = marca;
             this.activo = activo;
         }
+        #endregion
 
-        // Métodos
+        #region Método ToString
         public override string ToString()
         {
-            return $"Id: {id}, descripción: {descripcion}, categoria: {categoria.Nombre}, marca: {marca}, activo: {activo}";
+            return $"ID: {id}, descripción: {descripcion}, categoria: {categoria.Nombre}, marca: {marca}, activo: {activo}";
         }
-
-
-
+        #endregion
     }
 }
